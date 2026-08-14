@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="background:#060e06!important;min-height:100vh">
+<html lang="es" style="background:#080c08!important;min-height:100vh">
 <head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,155 +11,124 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
-<title>El Diario de los Astros · 13 agosto 2026</title>
+<title>El Diario de los Astros · 14 agosto 2026</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { background: #060e06 !important; }
-body { min-height: 100vh; background: #060e06 !important; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color: #f0f4e8; }
-#bg { position: fixed; inset: 0; z-index: 0; background: radial-gradient(ellipse at 22% 8%, #0c1a0a 0%, #060e06 50%, #0a0c06 100%); }
+html { background: #080c08 !important; }
+body { min-height: 100vh; background: #080c08 !important; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color: #f0ece0; }
+#bg { position: fixed; inset: 0; z-index: 0; background: radial-gradient(ellipse at 30% 20%, #101808 0%, #080c08 55%, #0c0c0a 100%); }
 #stars { position: fixed; inset: 0; pointer-events: none; z-index: 1; }
 .wrapper { max-width: 500px; margin: 0 auto; padding: 36px 20px 70px; position: relative; z-index: 2; }
-@keyframes twinkle { 0%,100%{opacity:0;transform:scale(.8)} 50%{opacity:.9;transform:scale(1.2)} }
+@keyframes twinkle { 0%,100%{opacity:0;transform:scale(.8)} 50%{opacity:.7;transform:scale(1.1)} }
 @keyframes floatUp { 0%{opacity:0;transform:translateY(20px)} 100%{opacity:1;transform:translateY(0)} }
 @keyframes shimmer { 0%{background-position:-200% center} 100%{background-position:200% center} }
-@keyframes drift { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
-@keyframes pulse { 0%,100%{opacity:.5} 50%{opacity:1} }
+@keyframes driftSlow { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+@keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:.8} }
 @keyframes msgIn { 0%{opacity:0;transform:translateY(8px)} 100%{opacity:1;transform:translateY(0)} }
 @keyframes reveal { 0%{opacity:0;transform:rotateY(90deg)} 100%{opacity:1;transform:rotateY(0)} }
-@keyframes glowSage { 0%,100%{box-shadow:0 0 20px #4a8a3055,0 0 40px #4a8a3022} 50%{box-shadow:0 0 40px #4a8a30aa,0 0 80px #4a8a3044} }
-@keyframes glowAmber { 0%,100%{box-shadow:0 0 14px #c0881844,0 0 28px #c0881822} 50%{box-shadow:0 0 28px #c0881888,0 0 56px #c0881844} }
-@keyframes glowElec { 0%,100%{box-shadow:0 0 14px #4070c044,0 0 28px #4070c022} 50%{box-shadow:0 0 28px #4070c088,0 0 56px #4070c044} }
-@keyframes glowRose { 0%,100%{box-shadow:0 0 14px #c0507044,0 0 28px #c0507022} 50%{box-shadow:0 0 28px #c0507088,0 0 56px #c0507044} }
-@keyframes glowGold { 0%,100%{box-shadow:0 0 14px #c8980044,0 0 28px #c8980022} 50%{box-shadow:0 0 28px #c8980088,0 0 56px #c8980044} }
-@keyframes virgoSettle { 0%,100%{filter:drop-shadow(0 0 6px #4a8a3077);transform:scale(1)} 50%{filter:drop-shadow(0 0 16px #4a8a30cc);transform:scale(1.06)} }
+@keyframes glowOlive { 0%,100%{box-shadow:0 0 16px #60783033,0 0 32px #60783015} 50%{box-shadow:0 0 32px #60783066,0 0 64px #60783030} }
+@keyframes glowWarm { 0%,100%{box-shadow:0 0 14px #a0884033,0 0 28px #a0884015} 50%{box-shadow:0 0 28px #a0884066,0 0 56px #a0884030} }
+@keyframes glowGold { 0%,100%{box-shadow:0 0 12px #c0a04033,0 0 24px #c0a04015} 50%{box-shadow:0 0 24px #c0a04066,0 0 48px #c0a04030} }
+@keyframes breathe { 0%,100%{filter:drop-shadow(0 0 5px #60783055);transform:scale(1)} 50%{filter:drop-shadow(0 0 12px #60783088);transform:scale(1.04)} }
 
 .header { text-align: center; margin-bottom: 26px; animation: floatUp .8s ease forwards; }
-.header-date { font-size: 12px; letter-spacing: 6px; color: #6a9a50; text-transform: uppercase; margin-bottom: 8px; font-weight: bold; }
-.header-title { font-size: 34px; font-weight: normal; font-style: italic; margin-bottom: 6px; background: linear-gradient(135deg, #3a6a28, #8ac870, #f0f4e8, #c09840, #3a6a28); background-size: 300% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 5s linear infinite; }
-.header-sub { font-size: 13px; color: #2a4a18; letter-spacing: 2px; }
+.header-date { font-size: 12px; letter-spacing: 6px; color: #78905a; text-transform: uppercase; margin-bottom: 8px; font-weight: bold; }
+.header-title { font-size: 34px; font-weight: normal; font-style: italic; margin-bottom: 6px; background: linear-gradient(135deg, #486030, #90a870, #f0ece0, #a09060, #486030); background-size: 300% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 6s linear infinite; }
+.header-sub { font-size: 13px; color: #303820; letter-spacing: 2px; }
 
-.como-leer { background: #4a8a3010; border: 1px solid #4a8a3044; border-radius: 12px; margin-bottom: 14px; overflow: hidden; }
-.como-leer-btn { width: 100%; background: transparent; border: none; color: #6a9a50; font-family: inherit; font-size: 13px; letter-spacing: 2px; padding: 13px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.como-leer { background: #60783010; border: 1px solid #60783038; border-radius: 12px; margin-bottom: 14px; overflow: hidden; }
+.como-leer-btn { width: 100%; background: transparent; border: none; color: #78905a; font-family: inherit; font-size: 13px; letter-spacing: 2px; padding: 13px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
 .como-leer-btn span { font-size: 16px; transition: transform 0.3s; }
 .como-leer-btn.abierto span { transform: rotate(180deg); }
-.como-leer-body { display: none; padding: 0 18px 16px; font-size: 14px; line-height: 1.85; color: #7a9a60; }
+.como-leer-body { display: none; padding: 0 18px 16px; font-size: 14px; line-height: 1.85; color: #889870; }
 .como-leer-body.visible { display: block; animation: floatUp 0.3s ease forwards; }
-.como-leer-body strong { color: #6a9a50; }
+.como-leer-body strong { color: #78905a; }
 
-/* POST ECLIPSE BANNER */
-.post-eclipse { background: linear-gradient(135deg, #0c1a0a, #080e06); border: 1px solid #4a8a3066; border-radius: 16px; padding: 18px; margin-bottom: 12px; animation: glowSage 2.5s ease-in-out infinite; display: flex; align-items: center; gap: 14px; }
-.post-icon { font-size: 38px; animation: virgoSettle 3.5s ease-in-out infinite; }
-.post-title { font-size: 16px; color: #8ac870; font-weight: bold; margin-bottom: 4px; }
-.post-sub { font-size: 11px; color: #2a4a18; letter-spacing: 2px; font-weight: bold; }
+/* PAUSA BANNER */
+.pausa-banner { background: linear-gradient(135deg, #101808, #0c1408); border: 1px solid #60783055; border-radius: 18px; padding: 24px 18px; margin-bottom: 16px; animation: glowOlive 3s ease-in-out infinite; text-align: center; }
+.pausa-icon { font-size: 60px; animation: breathe 4s ease-in-out infinite; display: block; margin-bottom: 10px; }
+.pausa-titulo { font-size: 19px; color: #90a870; font-weight: bold; margin-bottom: 5px; }
+.pausa-sub { font-size: 11px; color: #303820; letter-spacing: 3px; font-weight: bold; margin-bottom: 8px; }
+.pausa-desc { font-size: 14px; color: #788a60; font-style: italic; line-height: 1.7; }
 
-/* TRES MOMENTOS */
-.tres-titulo { font-size: 11px; letter-spacing: 4px; color: #4a8a30; text-align: center; margin-bottom: 10px; font-weight: bold; }
-.tres-momentos { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-.momento { border-radius: 10px; padding: 11px 14px; display: flex; align-items: center; gap: 12px; }
-.momento-man { background: #c0881808; border-left: 3px solid #c08818; }
-.momento-tar { background: #4070c008; border-left: 3px solid #4070c0; }
-.momento-noch { background: #c0507008; border-left: 3px solid #c05070; }
-.momento-icon { font-size: 22px; flex-shrink: 0; animation: drift 3s ease-in-out infinite; }
-.momento-content { flex: 1; }
-.momento-hora { font-size: 10px; letter-spacing: 2px; font-weight: bold; margin-bottom: 2px; }
-.momento-man .momento-hora { color: #c08818; }
-.momento-tar .momento-hora { color: #4070c0; }
-.momento-noch .momento-hora { color: #c05070; }
-.momento-desc { font-size: 13px; line-height: 1.4; }
-.momento-man .momento-desc { color: #a07030; }
-.momento-tar .momento-desc { color: #6090c0; }
-.momento-noch .momento-desc { color: #a07090; }
-.momento-desc strong { }
-.momento-man .momento-desc strong { color: #f0c070; }
-.momento-tar .momento-desc strong { color: #90c0f0; }
-.momento-noch .momento-desc strong { color: #f0a0c0; }
+/* INTEGRACION CHIPS */
+.integ-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; justify-content: center; }
+.ichip { font-size: 13px; padding: 6px 14px; border-radius: 20px; background: #60783012; border: 1px solid #60783040; color: #90a870; }
 
 /* HORARIO COLAPSABLE */
-.horario { background: linear-gradient(135deg, #0c1a0a, #060e06); border: 1px solid #4a8a3055; border-radius: 14px; margin-bottom: 18px; overflow: hidden; }
-.horario-btn { width: 100%; background: transparent; border: none; color: #6a9a50; font-family: inherit; font-size: 12px; letter-spacing: 4px; padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; font-weight: bold; }
+.horario { background: linear-gradient(135deg, #101808, #080c08); border: 1px solid #60783048; border-radius: 14px; margin-bottom: 18px; overflow: hidden; }
+.horario-btn { width: 100%; background: transparent; border: none; color: #78905a; font-family: inherit; font-size: 12px; letter-spacing: 4px; padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; font-weight: bold; }
 .horario-btn span { font-size: 16px; transition: transform 0.3s; }
 .horario-btn.abierto span { transform: rotate(180deg); }
 .horario-body { display: none; padding: 0 18px 14px; }
 .horario-body.visible { display: block; animation: floatUp 0.3s ease forwards; }
-.horario-item { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid #4a8a3015; }
+.horario-item { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid #60783012; }
 .horario-item:last-child { border-bottom: none; }
-.horario-item.dest-sage { background: #4a8a3015; border-radius: 8px; padding: 8px 10px; margin: 4px -10px; border-bottom: none; }
-.horario-item.dest-amber { background: #c0881815; border-radius: 8px; padding: 8px 10px; margin: 4px -10px; border-bottom: none; }
-.horario-item.dest-elec { background: #4070c015; border-radius: 8px; padding: 8px 10px; margin: 4px -10px; border-bottom: none; }
-.horario-item.dest-rose { background: #c0507015; border-radius: 8px; padding: 8px 10px; margin: 4px -10px; border-bottom: none; }
-.horario-hora { font-size: 13px; font-weight: bold; min-width: 80px; }
-.horario-hora.sage { color: #8ac870; }
-.horario-hora.amber { color: #e0a840; }
-.horario-hora.elec { color: #70a0e0; }
-.horario-hora.rose { color: #e090b0; }
-.horario-evento { font-size: 13px; color: #6a8a58; line-height: 1.5; }
-.horario-evento strong { color: #c0e0a0; }
+.horario-item.dest { background: #60783012; border-radius: 8px; padding: 8px 10px; margin: 4px -10px; border-bottom: none; }
+.horario-hora { font-size: 13px; font-weight: bold; min-width: 80px; color: #90a870; }
+.horario-evento { font-size: 13px; color: #607848; line-height: 1.5; }
+.horario-evento strong { color: #c0d0a8; }
 
 .tabs { display: flex; justify-content: center; margin-bottom: 24px; }
-.tab-btn { background: transparent; border: 1px solid #4a8a3033; color: #f0f4e8; padding: 8px 22px; cursor: pointer; font-family: inherit; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; transition: all .3s; }
+.tab-btn { background: transparent; border: 1px solid #60783030; color: #f0ece0; padding: 8px 22px; cursor: pointer; font-family: inherit; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; transition: all .3s; }
 .tab-btn:first-child { border-radius: 4px 0 0 4px; }
 .tab-btn:last-child { border-radius: 0 4px 4px 0; }
-.tab-btn.active { background: #4a8a3028; border-color: #4a8a30; color: #8ac870; }
+.tab-btn.active { background: #60783020; border-color: #607830; color: #90a870; }
 .panel { display: none; }
 .panel.on { display: block; animation: floatUp .5s ease forwards; }
-.card { background: linear-gradient(135deg, #0c1a0a44, #4a8a3008); border: 1px solid #4a8a3033; border-radius: 16px; padding: 20px; margin-bottom: 16px; }
-.card-label { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; font-weight: bold; }
-.label-sage { color: #8ac870; }
-.label-amber { color: #e0a840; }
-.label-elec { color: #70a0e0; }
-.label-rose { color: #e090b0; }
-.label-gold { color: #c8c040; }
-.card-body { font-size: 17px; line-height: 1.9; color: #7a9a68; text-shadow: 0 1px 4px #00000088; }
-.card-body strong { color: #8ac870; }
-.card-body em { color: #e0a840; font-style: italic; }
-.card-body .amber { color: #e0a840; }
-.card-body .elec { color: #70a0e0; }
-.card-body .rose { color: #e090b0; }
-.card-body .gold { color: #c8c040; }
-.card-left { border-left: 3px solid #4a8a30; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #0c1a0aaa, #4a8a3008); }
-.card-left-amber { border-left: 3px solid #c08818; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #1a1004aa, #c0881808); }
-.card-left-elec { border-left: 3px solid #4070c0; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #080c18aa, #4070c008); }
-.card-left-rose { border-left: 3px solid #c05070; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #180810aa, #c0507008); }
-.quote { font-size: 18px; color: #8ac870; font-style: italic; line-height: 1.7; border-left: 2px solid #4a8a30; padding-left: 14px; margin-bottom: 16px; }
-.ciclo { background: #ffffff05; border: 1px dashed #4a8a3033; border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #2a4a18; display: flex; align-items: flex-start; gap: 10px; line-height: 1.8; margin-bottom: 10px; }
-.ciclo strong { color: #8ac870; }
-.divider { border: none; border-top: 1px solid #4a8a301a; margin: 16px 0; }
+.card { background: linear-gradient(135deg, #10180840, #60783008); border: 1px solid #60783028; border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+.card-label { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; font-weight: bold; color: #90a870; }
+.card-body { font-size: 17px; line-height: 1.9; color: #809068; text-shadow: 0 1px 4px #00000088; }
+.card-body strong { color: #90a870; }
+.card-body em { color: #a09060; font-style: italic; }
+.card-left { border-left: 3px solid #607830; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #101808aa, #60783008); }
+.card-left-warm { border-left: 3px solid #a08840; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #181408aa, #a0884008); }
+.card-left-lav { border-left: 3px solid #887898; border-radius: 0 12px 12px 0; padding: 18px; margin-bottom: 16px; background: linear-gradient(135deg, #100c18aa, #88789808); }
+.tres-obs { background: linear-gradient(135deg, #101808, #0c1408); border: 1px solid #60783030; border-radius: 14px; padding: 18px; margin-bottom: 16px; }
+.tres-obs-titulo { font-size: 11px; letter-spacing: 3px; color: #486030; font-weight: bold; text-align: center; margin-bottom: 14px; }
+.obs-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid #60783015; font-size: 15px; color: #889868; line-height: 1.6; font-style: italic; }
+.obs-item:last-child { border-bottom: none; }
+.obs-item span { font-size: 18px; flex-shrink: 0; }
+.quote { font-size: 18px; color: #90a870; font-style: italic; line-height: 1.7; border-left: 2px solid #607830; padding-left: 14px; margin-bottom: 16px; }
+.ciclo { background: #ffffff04; border: 1px dashed #60783028; border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #303820; display: flex; align-items: flex-start; gap: 10px; line-height: 1.8; margin-bottom: 10px; }
+.ciclo strong { color: #90a870; }
+.divider { border: none; border-top: 1px solid #60783015; margin: 16px 0; }
 .tarot-num { text-align: center; margin-bottom: 22px; }
-.tarot-num-lbl { font-size: 13px; color: #2a4a18; letter-spacing: 2px; margin-bottom: 5px; }
-.tarot-num-val { font-size: 13px; color: #060e06; }
-.tarot-num-val strong { color: #8ac870; }
+.tarot-num-lbl { font-size: 13px; color: #303820; letter-spacing: 2px; margin-bottom: 5px; }
+.tarot-num-val { font-size: 13px; color: #080c08; }
+.tarot-num-val strong { color: #90a870; }
 .card-back-wrap { text-align: center; }
-.card-back { width: 175px; height: 285px; margin: 0 auto 20px; background: linear-gradient(160deg, #060e06, #0c1a0a, #060e06); border: 2px solid #4a8a30; border-radius: 16px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; animation: drift 3s ease-in-out infinite, glowSage 2.5s ease-in-out infinite; position: relative; overflow: hidden; }
-.card-back::before { content:''; position:absolute; inset:8px; border:1px solid #4a8a3022; border-radius:10px; pointer-events:none; }
-.card-back-icon { font-size: 46px; animation: virgoSettle 3.5s ease-in-out infinite; }
-.card-back-lbl { font-size: 12px; letter-spacing: 3px; color: #8ac870; text-transform: uppercase; font-weight: bold; }
-.card-back-hint { font-size: 12px; color: #060e06; }
-.card-back-sub { font-size: 13px; color: #2a4a18; font-style: italic; }
+.card-back { width: 175px; height: 285px; margin: 0 auto 20px; background: linear-gradient(160deg, #080c08, #101808, #080c08); border: 2px solid #607830; border-radius: 16px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; animation: driftSlow 4s ease-in-out infinite, glowOlive 3s ease-in-out infinite; position: relative; overflow: hidden; }
+.card-back::before { content:''; position:absolute; inset:8px; border:1px solid #60783018; border-radius:10px; pointer-events:none; }
+.card-back-icon { font-size: 46px; animation: breathe 4s ease-in-out infinite; }
+.card-back-lbl { font-size: 12px; letter-spacing: 3px; color: #90a870; text-transform: uppercase; font-weight: bold; }
+.card-back-hint { font-size: 12px; color: #080c08; }
+.card-back-sub { font-size: 13px; color: #303820; font-style: italic; }
 .card-front-wrap { animation: reveal .8s ease forwards; }
-.card-face { width: 175px; height: 285px; margin: 0 auto 26px; background: linear-gradient(160deg, #060e06, #0c1a0a, #060e06); border: 2px solid #c8c040; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px 14px; animation: glowGold 3s ease-in-out infinite; position: relative; overflow: hidden; }
-.card-face::before { content:''; position:absolute; inset:8px; border:1px solid #c8c04022; border-radius:10px; pointer-events:none; }
-.card-roman { font-size: 12px; letter-spacing: 3px; color: #c8c040; font-weight: bold; }
+.card-face { width: 175px; height: 285px; margin: 0 auto 26px; background: linear-gradient(160deg, #080c08, #181408, #080c08); border: 2px solid #c0a040; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 16px 14px; animation: glowGold 3s ease-in-out infinite; position: relative; overflow: hidden; }
+.card-face::before { content:''; position:absolute; inset:8px; border:1px solid #c0a04018; border-radius:10px; pointer-events:none; }
+.card-roman { font-size: 12px; letter-spacing: 3px; color: #c0a040; font-weight: bold; }
 .card-art { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; }
-.card-main { font-size: 54px; animation: drift 3s ease-in-out infinite; }
+.card-main { font-size: 54px; animation: driftSlow 4s ease-in-out infinite; }
 .card-orbs { display:flex; gap:10px; font-size:18px; }
-.card-name { font-size: 13px; letter-spacing: 2px; color: #c8c040; text-align:center; text-transform:uppercase; border-top: 1px solid #c8c04033; padding-top: 10px; width: 100%; }
-.card-info { background: linear-gradient(135deg, #0c1a0a33, #4a8a3008); border: 1px solid #4a8a3033; border-radius: 14px; padding: 20px 18px; margin-bottom: 18px; }
+.card-name { font-size: 13px; letter-spacing: 2px; color: #c0a040; text-align:center; text-transform:uppercase; border-top: 1px solid #c0a04025; padding-top: 10px; width: 100%; }
+.card-info { background: linear-gradient(135deg, #10180830, #60783008); border: 1px solid #60783028; border-radius: 14px; padding: 20px 18px; margin-bottom: 18px; }
 .card-info-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
-.card-info-title { font-size:19px; color:#c8c040; font-style:italic; }
-.card-info-badge { font-size:12px; letter-spacing:2px; color:#2a4a18; font-weight:bold; }
-.card-info p { font-size:16px; line-height:1.9; color:#7a9a68; }
+.card-info-title { font-size:19px; color:#c0a040; font-style:italic; }
+.card-info-badge { font-size:12px; letter-spacing:2px; color:#303820; font-weight:bold; }
+.card-info p { font-size:16px; line-height:1.9; color:#809068; }
 .card-info p+p { margin-top:10px; }
-.card-info strong { color:#c8c040; }
-.card-info em { color:#8ac870; }
+.card-info strong { color:#c0a040; }
+.card-info em { color:#90a870; }
 .keywords { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
-.kw { font-size:13px; letter-spacing:1px; padding:5px 12px; border:1px solid #4a8a3044; border-radius:20px; color:#8ac870; background:#4a8a3010; }
-.reveal-btn { background: linear-gradient(135deg, #060e06, #0c1a0a); border: 1px solid #c8c040; color: #c8c040; padding: 13px 38px; font-family:inherit; font-size:14px; letter-spacing:3px; text-transform:uppercase; cursor:pointer; border-radius:4px; animation: glowGold 2.5s ease-in-out infinite; transition:transform .2s; display:block; margin:0 auto; }
+.kw { font-size:13px; letter-spacing:1px; padding:5px 12px; border:1px solid #60783038; border-radius:20px; color:#90a870; background:#60783010; }
+.reveal-btn { background: linear-gradient(135deg, #080c08, #181408); border: 1px solid #c0a040; color: #c0a040; padding: 13px 38px; font-family:inherit; font-size:14px; letter-spacing:3px; text-transform:uppercase; cursor:pointer; border-radius:4px; animation: glowGold 3s ease-in-out infinite; transition:transform .2s; display:block; margin:0 auto; }
 .reveal-btn:hover { transform:scale(1.04); }
-.tarot-msg { background: linear-gradient(135deg, #c8c04011, #0c1a0a33); border: 1px solid #c8c040; border-radius: 12px; padding: 18px 20px; text-align:center; font-size:18px; font-style:italic; color:#c8c040; letter-spacing:.5px; line-height:1.7; animation: msgIn .8s ease forwards; }
-.footer { text-align:center; margin-top:40px; font-size:12px; color:#060e06; letter-spacing:3px; }
+.tarot-msg { background: linear-gradient(135deg, #c0a04010, #10180830); border: 1px solid #c0a040; border-radius: 12px; padding: 18px 20px; text-align:center; font-size:18px; font-style:italic; color:#c0a040; letter-spacing:.5px; line-height:1.7; animation: msgIn .8s ease forwards; }
+.footer { text-align:center; margin-top:40px; font-size:12px; color:#080c08; letter-spacing:3px; }
 </style>
 </head>
-<body style="background:#060e06!important;min-height:100vh">
+<body style="background:#080c08!important;min-height:100vh">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTC55FW9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -178,44 +147,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="header">
-    <div class="header-date">✦ Jueves · 13 de agosto de 2026 ✦</div>
+    <div class="header-date">✦ Viernes · 14 de agosto de 2026 ✦</div>
     <h1 class="header-title">El Diario de los Astros</h1>
-    <div class="header-sub">✧ · Después del cambio llega el momento de ordenar · ✧</div>
+    <div class="header-sub">✧ · La importancia de integrar antes de seguir avanzando · ✧</div>
   </div>
 
-  <!-- POST ECLIPSE -->
-  <div class="post-eclipse">
-    <div class="post-icon">♍</div>
-    <div>
-      <div class="post-title">Luna en Virgo · del eclipse a la organización</div>
-      <div class="post-sub">⟡ PLANIFICAR · ANALIZAR · DAR FORMA CONCRETA ⟡</div>
-    </div>
+  <!-- PAUSA BANNER -->
+  <div class="pausa-banner">
+    <span class="pausa-icon">🌿</span>
+    <div class="pausa-titulo">Luna en Virgo · el cielo regala una pausa</div>
+    <div class="pausa-sub">⟡ SIN ASPECTOS MAYORES · DÍA DE INTEGRACIÓN ⟡</div>
+    <div class="pausa-desc">Las grandes transformaciones también necesitan momentos para asentarse. Hoy es ese momento.</div>
   </div>
 
-  <!-- TRES MOMENTOS -->
-  <div class="tres-titulo">⟡ UN DÍA EN TRES MOVIMIENTOS ⟡</div>
-  <div class="tres-momentos">
-    <div class="momento momento-man">
-      <div class="momento-icon">⚡</div>
-      <div class="momento-content">
-        <div class="momento-hora">⟡ POR LA MAÑANA</div>
-        <div class="momento-desc"><strong>Sextil Marte</strong> — trabajo, productividad, emociones en acción</div>
-      </div>
-    </div>
-    <div class="momento momento-tar">
-      <div class="momento-icon">🌀</div>
-      <div class="momento-content">
-        <div class="momento-hora">⟡ POR LA TARDE</div>
-        <div class="momento-desc"><strong>Cuadratura Urano</strong> — cambios inesperados, flexibilidad</div>
-      </div>
-    </div>
-    <div class="momento momento-noch">
-      <div class="momento-icon">💬</div>
-      <div class="momento-content">
-        <div class="momento-hora">⟡ AL FINAL DEL DÍA</div>
-        <div class="momento-desc"><strong>Mercurio sextil Venus</strong> — conversaciones que resuelven</div>
-      </div>
-    </div>
+  <!-- CHIPS -->
+  <div class="integ-chips">
+    <span class="ichip">🏠 Ordenar la casa</span>
+    <span class="ichip">🌿 Cuidar el cuerpo</span>
+    <span class="ichip">😴 Descansar mejor</span>
+    <span class="ichip">📋 Pendientes admin</span>
+    <span class="ichip">⚡ Recuperar energía</span>
   </div>
 
   <!-- MAPA COLAPSABLE -->
@@ -224,21 +175,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       ⟡ El mapa del día <span>▾</span>
     </button>
     <div class="horario-body">
-      <div class="horario-item dest-sage">
-        <div class="horario-hora sage">Todo el día</div>
-        <div class="horario-evento"><strong>♍ Luna en Virgo</strong> — organizar, analizar, dar forma a lo que el eclipse movió</div>
+      <div class="horario-item dest">
+        <div class="horario-hora">Todo el día</div>
+        <div class="horario-evento"><strong>♍ Luna en Virgo sin aspectos mayores</strong> — pausa, integración, calma</div>
       </div>
-      <div class="horario-item dest-amber">
-        <div class="horario-hora amber">Por la mañana</div>
-        <div class="horario-evento"><strong>Luna sextil Marte en Cáncer</strong> — trabajo, productividad, resolver pendientes, nuevos hábitos</div>
+      <div class="horario-item">
+        <div class="horario-hora">Ideal para</div>
+        <div class="horario-evento"><strong>Organizar, descansar, cuidar el cuerpo, ordenar pendientes</strong> — Virgo en modo de cuidado propio</div>
       </div>
-      <div class="horario-item dest-elec">
-        <div class="horario-hora elec">Por la tarde</div>
-        <div class="horario-evento"><strong>Luna cuadratura Urano en Géminis</strong> — cambios de planes, noticias inesperadas, ser flexible</div>
-      </div>
-      <div class="horario-item dest-rose">
-        <div class="horario-hora rose">Al cierre</div>
-        <div class="horario-evento"><strong>Mercurio Leo sextil Venus en Libra</strong> — conversaciones afectivas, negociaciones, buena impresión</div>
+      <div class="horario-item">
+        <div class="horario-hora">Clave</div>
+        <div class="horario-evento"><strong>Observar qué aprendió la semana</strong> — qué decisiones tomaron forma, qué hábitos cambiar</div>
       </div>
     </div>
   </div>
@@ -251,53 +198,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="panel on" id="panel-astros">
 
     <div class="card">
-      <div class="card-label label-sage">⟡ Luna en Virgo · del eclipse a la estructura</div>
-      <div class="card-body">Luego de la intensidad del eclipse, <strong>la Luna abandona Leo e ingresa en Virgo</strong>. El cambio de energía es notable. <em>De la expansión emocional pasamos a la necesidad de organizar, analizar y dar forma concreta a todo aquello que comenzó a moverse durante los últimos días.</em> Virgo no es el freno del eclipse — es el suelo donde aterriza. Ningún gran sueño puede sostenerse sin planificación.</div>
+      <div class="card-label">⟡ Una pausa que no es pérdida de tiempo</div>
+      <div class="card-body">Después de una semana tan intensa — eclipse solar, ingreso de Marte a Cáncer, Mercurio en Leo, Quirón retrógrado — <strong>el cielo regala hoy una pausa genuina</strong>. La Luna continúa en Virgo sin realizar aspectos mayores. <em>Aunque pueda parecer un día tranquilo, su importancia será enorme.</em> Las grandes transformaciones no ocurren únicamente cuando suceden eventos extraordinarios — también necesitan momentos de integración para asentarse.</div>
+    </div>
+
+    <div class="card-left">
+      <div class="card-label">⟡ Qué significa integrar</div>
+      <div class="card-body"><strong>Integrar no es no hacer nada — es digerir lo vivido.</strong> <em>Es dejar que lo que se movió esta semana encuentre su lugar dentro de uno, antes de salir a pedir más.</em> Como cuando se come algo nutritivo y el cuerpo necesita tiempo para procesarlo. Hoy el procesamiento es emocional, mental y energético.</div>
     </div>
 
     <div class="divider"></div>
 
-    <div class="card">
-      <div class="card-label label-amber">⟡ Mañana · Luna sextil Marte · productividad</div>
-      <div class="card-body">Durante la mañana, la <span class="amber"><strong>Luna en Virgo forma un sextil con Marte en Cáncer</strong></span>. Este aspecto favorece el trabajo, la productividad y la posibilidad de canalizar las emociones de manera constructiva. <em>Las emociones encuentran una vía saludable para expresarse a través de la acción.</em> Excelente momento para resolver pendientes, organizar la agenda, comenzar nuevos hábitos o avanzar en proyectos que requieren constancia.</div>
-    </div>
-
-    <div class="card-left-amber">
-      <div class="card-label label-amber">⟡ Qué hacer con esta mañana</div>
-      <div class="card-body"><strong>Todo lo que el eclipse inspiró, la mañana del jueves puede empezar a traducirlo en pasos concretos.</strong> <em>Una lista, un primer contacto, una decisión que venía postergándose, un hábito que querés instalar.</em> Virgo con Marte no piensa demasiado — hace. Y hace bien.</div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="card">
-      <div class="card-label label-elec">⟡ Tarde · Luna cuadratura Urano · flexibilidad</div>
-      <div class="card-body">Por la tarde aparece la necesidad de flexibilidad. La <span class="elec"><strong>cuadratura entre Luna en Virgo y Urano en Géminis</strong></span> puede traer cambios inesperados de planes, modificaciones de agenda, noticias que alteren lo organizado o la sensación de que algo no ocurre como se esperaba. <em>Virgo tiende a resistir los cambios — y justamente Urano llega a recordarle que no todo puede ni debe ser controlado.</em></div>
-    </div>
-
-    <div class="card-left-elec">
-      <div class="card-label label-elec">⟡ Urano no viene a complicar</div>
-      <div class="card-body"><strong>Urano no llega para complicar la vida — llega para mostrar caminos que todavía no se habían considerado.</strong> <em>El cambio inesperado de la tarde puede ser exactamente la puerta que el eclipse quería abrir.</em> Cuanto menos resistencia se ofrezca, más sencillo será adaptarse y aprovechar lo que aparece.</div>
+    <!-- TRES OBSERVACIONES -->
+    <div class="tres-obs">
+      <div class="tres-obs-titulo">⟡ TRES PREGUNTAS PARA HOY ⟡</div>
+      <div class="obs-item"><span>🌱</span><div>¿Qué aprendí durante esta semana que no sabía el lunes pasado?</div></div>
+      <div class="obs-item"><span>✦</span><div>¿Qué decisiones del eclipse ya empezaron a tomar forma concreta?</div></div>
+      <div class="obs-item"><span>🌿</span><div>¿Qué hábito necesito modificar para sostener el nuevo camino que se abrió?</div></div>
     </div>
 
     <div class="divider"></div>
 
-    <div class="card-left-rose">
-      <div class="card-label label-rose">⟡ Al cierre · Mercurio sextil Venus · la palabra encuentra armonía</div>
-      <div class="card-body">El día termina con uno de los aspectos más agradables para la comunicación: <span class="rose"><strong>Mercurio en Leo en sextil con Venus en Libra</strong></span>. Favorece las conversaciones afectivas, las negociaciones, los acuerdos y la posibilidad de expresar sentimientos con mayor claridad. <em>También es excelente para entrevistas laborales, reuniones o presentaciones donde importa generar una buena impresión.</em> El diálogo puede resolver aquello que durante días parecía difícil.</div>
+    <div class="card-left-warm">
+      <div class="card-label" style="color:#c0a060">⟡ Virgo y el cuidado propio</div>
+      <div class="card-body"><strong>Virgo es el signo del cuerpo, los hábitos y los rituales cotidianos.</strong> <em>Hoy invita a organizar la casa, cuidar el cuerpo, descansar mejor, ordenar pendientes administrativos o simplemente recuperar energía.</em> Acciones pequeñas y concretas que no generan ruido pero que construyen la base desde la cual todo lo demás puede sostenerse.</div>
+    </div>
+
+    <div class="card-left-lav">
+      <div class="card-label" style="color:#a090b8">⟡ Crecer no siempre es hacer más</div>
+      <div class="card-body"><strong>Muchas veces creemos que crecer significa hacer cada vez más.</strong> <em>Virgo recuerda que crecer también implica aprender a administrar mejor los recursos, el tiempo y la energía.</em> La calma de hoy será la que permita sostener los cambios que comenzaron a gestarse durante los últimos días. El descanso no es el opuesto del progreso — es parte de él.</div>
     </div>
 
     <div class="divider"></div>
 
-    <div class="quote">Ningún gran sueño puede sostenerse sin planificación. Virgo es el suelo donde aterriza el eclipse.</div>
+    <div class="quote">La calma de hoy será la que permita sostener lo que el eclipse inauguró.</div>
 
     <div class="ciclo">
-      <span style="font-size:20px">🌑</span>
-      <span>El eclipse del miércoles abrió un ciclo de 6 meses. <strong>El jueves es el primer día de construcción real</strong> dentro de ese ciclo.</span>
+      <span style="font-size:20px">🌿</span>
+      <span>El eclipse abrió el ciclo. Esta semana lo activó. <strong>El viernes lo integra.</strong> El lunes que viene arranca desde un lugar más sólido.</span>
     </div>
 
     <div class="ciclo">
       <span style="font-size:20px">♍</span>
-      <span>Posiciones del día: <strong>Sol 20° ♌ · Luna ♍ · Mercurio 4° ♌ · Venus 7° ♎ · Marte 1° ♋ · Júpiter 8° ♌ · Saturno 15° ♈ Rx · Urano 5° ♊ · Neptuno 4° ♈ · Plutón 3° ♒ Rx · Quirón 0° ♉ Rx</strong></span>
+      <span>Posiciones del día: <strong>Sol 21° ♌ · Luna ♍ · Mercurio 5° ♌ · Venus 8° ♎ · Marte 2° ♋ · Júpiter 8° ♌ · Saturno 15° ♈ Rx · Urano 5° ♊ · Neptuno 4° ♈ · Plutón 3° ♒ Rx · Quirón 0° ♉ Rx</strong></span>
     </div>
 
   </div>
@@ -305,12 +248,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="panel" id="panel-tarot">
     <div class="tarot-num">
       <div class="tarot-num-lbl">CARTA NUMEROLÓGICA DEL DÍA</div>
-      <div class="tarot-num-val">1+3+0+8+2+0+2+6 = <strong>22 → 4 → El Emperador</strong></div>
+      <div class="tarot-num-val">1+4+0+8+2+0+2+6 = <strong>23 → 5 → El Hierofante</strong></div>
     </div>
 
     <div id="back-wrap" class="card-back-wrap">
       <div class="card-back" onclick="flipCard()">
-        <div class="card-back-icon">♍</div>
+        <div class="card-back-icon">🕯️</div>
         <div class="card-back-lbl">Revelar</div>
         <div class="card-back-hint">toca la carta</div>
       </div>
@@ -319,26 +262,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div id="front-wrap" class="card-front-wrap" style="display:none;">
       <div class="card-face">
-        <div class="card-roman">IV</div>
+        <div class="card-roman">V</div>
         <div class="card-art">
-          <div class="card-main">👑</div>
+          <div class="card-main">🕯️</div>
           <div class="card-orbs">
-            <span style="animation:drift 3s .2s ease-in-out infinite">♍</span>
-            <span style="animation:drift 3s .5s ease-in-out infinite">🌑</span>
-            <span style="animation:drift 3s .8s ease-in-out infinite">✦</span>
+            <span style="animation:driftSlow 4s .2s ease-in-out infinite">♍</span>
+            <span style="animation:driftSlow 4s .5s ease-in-out infinite">🌿</span>
+            <span style="animation:driftSlow 4s .8s ease-in-out infinite">✦</span>
           </div>
-          <div style="font-size:19px;animation:drift 3s .4s ease-in-out infinite">⟡</div>
+          <div style="font-size:19px;animation:driftSlow 4s .4s ease-in-out infinite">⟡</div>
         </div>
-        <div class="card-name">El Emperador</div>
+        <div class="card-name">El Hierofante</div>
       </div>
 
       <div class="card-info">
         <div class="card-info-head">
-          <div class="card-info-title">El Emperador · IV</div>
+          <div class="card-info-title">El Hierofante · V</div>
           <div class="card-info-badge">ARCANO MAYOR</div>
         </div>
-        <p>La carta de <strong>quien construye con visión y con método</strong>. El Emperador aparece el primer día post-eclipse en Virgo — <em>el día en que la energía pide exactamente eso: tomar lo que el eclipse inspiró y empezar a darle estructura real.</em></p>
-        <p><strong>El Emperador no improvisa — planifica. No reacciona — decide.</strong> Con la mañana productiva de Virgo-Marte y el cierre armonioso de Mercurio-Venus, <em>hoy es el día ideal para asumir el rol de arquitecta de lo que viene.</em> El eclipse mostró el horizonte. El Emperador traza el camino. 👑♍</p>
+        <p>La carta del <strong>saber que se asienta en silencio</strong>. El Hierofante aparece en el día de integración post-eclipse — <em>como el maestro interior que no habla en los momentos de acción sino en los momentos de quietud, cuando hay espacio para escuchar.</em></p>
+        <p><strong>El Hierofante de hoy dice: lo que aprendiste esta semana vale más de lo que creés.</strong> No hace falta seguir buscando afuera. <em>La pausa de hoy es el momento en que ese aprendizaje se convierte en sabiduría propia.</em> Escuchate. 🕯️🌿</p>
       </div>
 
       <div class="keywords" id="kw-list"></div>
@@ -355,19 +298,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 function toggleMapa(btn){btn.classList.toggle('abierto');const body=btn.nextElementSibling;body.classList.toggle('visible');}
 function toggleExplainer(btn){btn.classList.toggle('abierto');const body=btn.nextElementSibling;body.classList.toggle('visible');}
 const sc=document.getElementById('stars');
-for(let i=0;i<80;i++){const s=document.createElement('div');const sz=Math.random()*2.2+0.3;
+for(let i=0;i<60;i++){const s=document.createElement('div');const sz=Math.random()*1.8+0.2;
 const tipo=Math.random();
-const color=tipo>.5?'#8ac870':tipo>.25?'#e0a840':'#c0e0a0';
-s.style.cssText=`position:fixed;border-radius:50%;background:${color};opacity:0;pointer-events:none;z-index:1;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*4+2).toFixed(2)}s ${(Math.random()*5).toFixed(2)}s ease-in-out infinite;`;
+const color=tipo>.5?'#90a870':tipo>.25?'#c0d0a0':'#a0b888';
+s.style.cssText=`position:fixed;border-radius:50%;background:${color};opacity:0;pointer-events:none;z-index:1;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*5+3).toFixed(2)}s ${(Math.random()*6).toFixed(2)}s ease-in-out infinite;`;
 sc.appendChild(s);}
-const kws=["Luna en Virgo · ordenar","Mañana productiva","Tarde flexible","Conversaciones que resuelven","Primer día del nuevo ciclo","Construir con método"];
+const kws=["Integrar antes de avanzar","Virgo sin aspectos · pausa","Cuidar el cuerpo hoy","La calma sostiene el cambio","Crecer también es descansar","Sabiduría interior"];
 const kl=document.getElementById('kw-list');
 kws.forEach(k=>{const s=document.createElement('span');s.className='kw';s.textContent=k;kl.appendChild(s);});
 function switchTab(t){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.getElementById('panel-'+t).classList.add('on');document.getElementById('btn-'+t).classList.add('active');}
 function flipCard(){document.getElementById('back-wrap').style.display='none';document.getElementById('front-wrap').style.display='block';}
-const msgs=["Ningún gran sueño puede sostenerse sin planificación.","El eclipse mostró el horizonte. Hoy trazás el camino.","Virgo no es el freno del eclipse — es el suelo donde aterriza.","Urano no complica — muestra caminos no considerados.","El diálogo puede resolver aquello que parecía difícil."];
+const msgs=["La calma de hoy será la que permita sostener lo que el eclipse inauguró.","Crecer también implica aprender a administrar mejor el tiempo y la energía.","El descanso no es el opuesto del progreso — es parte de él.","Lo que aprendiste esta semana vale más de lo que creés.","Escuchate. La pausa de hoy es el momento en que el aprendizaje se vuelve sabiduría."];
 let idx=0;
-function revealMsg(){showMsg(idx);setInterval(()=>{idx=(idx+1)%msgs.length;showMsg(idx);},3000);}
+function revealMsg(){showMsg(idx);setInterval(()=>{idx=(idx+1)%msgs.length;showMsg(idx);},3500);}
 function showMsg(i){document.getElementById('reveal-area').innerHTML='<div class="tarot-msg">✦ '+msgs[i]+' ✦</div>';}
 </script>
 </body>
