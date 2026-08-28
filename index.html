@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" style="background:#060810!important">
+<html lang="es" style="background:#04060e!important">
 <head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,271 +11,210 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="color-scheme" content="dark">
-<title>El Diario de los Astros · 27 agosto 2026</title>
+<title>El Diario de los Astros · 28 agosto 2026</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-html, body { height: 100%; overflow: hidden; background: #060810 !important; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; color: #f0f4ff; }
+* { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+html, body { height:100%; overflow:hidden; background:#04060e !important; font-family:'Palatino Linotype','Book Antiqua',Palatino,serif; color:#f0f0ff; }
+#stars { position:fixed; inset:0; pointer-events:none; z-index:0; }
 
-#stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.track { display:flex; width:100%; height:100vh; overflow-x:scroll; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none; position:relative; z-index:1; }
+.track::-webkit-scrollbar { display:none; }
 
-/* TRACK */
-.track {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  position: relative;
-  z-index: 1;
-}
-.track::-webkit-scrollbar { display: none; }
+.slide { min-width:100vw; height:100vh; scroll-snap-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:28px 24px 80px; position:relative; overflow:hidden; }
 
-/* SLIDE */
-.slide {
-  min-width: 100vw;
-  height: 100vh;
-  scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 28px 24px 80px;
-  position: relative;
-  overflow: hidden;
-}
+/* fondos */
+.s0 { background:radial-gradient(ellipse at 50% 40%, #0c0820 0%, #04060e 70%); }
+.s1 { background:radial-gradient(ellipse at 30% 50%, #080c20 0%, #04060e 70%); }
+.s2 { background:radial-gradient(ellipse at 60% 30%, #0c0818 0%, #04060e 70%); }
+.s3 { background:radial-gradient(ellipse at 40% 60%, #080e1c 0%, #04060e 70%); }
+.s4 { background:radial-gradient(ellipse at 55% 45%, #0a0a1e 0%, #04060e 70%); }
+.s5 { background:radial-gradient(ellipse at 35% 55%, #060c14 0%, #04060e 70%); }
+.s6 { background:radial-gradient(ellipse at 50% 50%, #0c0820 0%, #04060e 70%); }
+.s7 { background:radial-gradient(ellipse at 45% 40%, #08081e 0%, #04060e 70%); }
 
-/* FONDOS POR SLIDE */
-.s0 { background: radial-gradient(ellipse at 30% 30%, #0e1428 0%, #060810 70%); }
-.s1 { background: radial-gradient(ellipse at 70% 30%, #101808 0%, #060810 70%); }
-.s2 { background: radial-gradient(ellipse at 30% 60%, #060c18 0%, #060810 70%); }
-.s3 { background: radial-gradient(ellipse at 60% 40%, #0e0820 0%, #060810 70%); }
-.s4 { background: radial-gradient(ellipse at 40% 60%, #08101e 0%, #060810 70%); }
-.s5 { background: radial-gradient(ellipse at 50% 40%, #0a0820 0%, #060810 70%); }
-.s6 { background: radial-gradient(ellipse at 30% 30%, #0e1020 0%, #060810 70%); }
+.inner { max-width:440px; width:100%; text-align:center; }
 
-/* INNER */
-.inner { max-width: 440px; width: 100%; text-align: center; }
-
-/* COLORES ACENTO POR SLIDE */
-.accent-aqua { color: #80c0f0; }
-.accent-olive { color: #a0d060; }
-.accent-pisc { color: #9080e0; }
-.accent-teal { color: #60d0b0; }
-.accent-eclipse { color: #c0a0f0; }
-.accent-gold { color: #f0c060; }
-.accent-silver { color: #b0c0e0; }
-
-/* ELEMENTOS */
-.slide-num { font-size: 13px; letter-spacing: 4px; margin-bottom: 6px; opacity: .6; text-shadow: 0 1px 3px #ffffff22; }
-.slide-icon { font-size: 62px; margin-bottom: 16px; line-height: 1; }
-.slide-tag { font-size: 13px; letter-spacing: 3px; font-weight: bold; margin-bottom: 10px; text-shadow: 0 1px 3px #ffffff22; }
-.slide-title { font-size: 24px; font-weight: normal; font-style: italic; margin-bottom: 16px; line-height: 1.3; text-shadow: 0 1px 3px #ffffff33; }
-.slide-body { font-size: 18px; line-height: 1.85; color: #e8eeff !important; text-shadow: 0 1px 4px #00000099; }
+/* tipografía — todo claro desde cero */
+.slide-num   { font-size:13px; letter-spacing:4px; margin-bottom:6px; color:#8090c0; text-shadow:0 1px 4px #00000099; }
+.slide-icon  { font-size:64px; margin-bottom:14px; line-height:1; }
+.slide-tag   { font-size:13px; letter-spacing:3px; font-weight:bold; margin-bottom:10px; text-shadow:0 1px 4px #00000099; }
+.slide-title { font-size:24px; font-weight:normal; font-style:italic; margin-bottom:16px; line-height:1.3; text-shadow:0 1px 4px #00000099; }
+.slide-body  { font-size:18px; line-height:1.85; color:#e8e8ff; text-shadow:0 1px 4px #00000099; }
 .slide-body strong { }
-.slide-body em { font-style: italic; }
-.divline { border: none; border-top: 1px solid #ffffff15; margin: 14px 0; }
-.consejo-box { border-radius: 14px; padding: 16px 18px; margin-top: 14px; }
-.hint { font-size: 14px; letter-spacing: 2px; margin-top: 18px; opacity: .5; text-shadow: 0 1px 2px #ffffff22; }
+.slide-body em { font-style:italic; }
+.divline { border:none; border-top:1px solid #ffffff18; margin:14px 0; }
+.hint { font-size:14px; letter-spacing:2px; margin-top:18px; color:#7080a8; text-shadow:0 1px 4px #00000099; }
 
-/* SLIDE 0 — PORTADA */
-.slide-date { font-size: 13px; letter-spacing: 5px; margin-bottom: 6px; text-shadow: 0 1px 3px #ffffff33; }
-.slide-main-title { font-size: 30px; font-style: italic; margin-bottom: 8px; line-height: 1.2; text-shadow: 0 1px 3px #ffffff33; }
-.slide-sub { font-size: 13px; letter-spacing: 2px; opacity: .7; text-shadow: 0 1px 3px #ffffff22; }
-.pill { display: inline-block; border-radius: 20px; padding: 5px 14px; font-size: 12px; font-weight: bold; letter-spacing: 1px; margin: 4px; text-shadow: 0 1px 2px #ffffff22; }
+/* portada */
+.pill { display:inline-block; border-radius:20px; padding:5px 14px; font-size:14px; font-weight:bold; letter-spacing:1px; margin:4px; color:#e0e8ff; text-shadow:0 1px 4px #00000099; }
 
-/* TAROT */
-.tarot-num-lbl { font-size: 14px; letter-spacing: 2px; margin-bottom: 6px; opacity: .6; }
-.card-face { width: 140px; height: 220px; margin: 0 auto 18px; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 12px 12px; position: relative; overflow: hidden; }
-.card-face::before { content: ''; position: absolute; inset: 7px; border-radius: 9px; pointer-events: none; }
-.card-roman { font-size: 13px; letter-spacing: 3px; font-weight: bold; }
-.card-art { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; font-size: 38px; }
-.card-name-label { font-size: 13px; letter-spacing: 2px; text-align: center; text-transform: uppercase; border-top: 1px solid #ffffff20; padding-top: 8px; width: 100%; }
+/* tarot */
+.card-face { width:150px; height:235px; margin:0 auto 16px; border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:14px 12px; position:relative; overflow:hidden; }
+.card-roman { font-size:13px; letter-spacing:3px; font-weight:bold; text-shadow:0 1px 4px #00000099; }
+.card-art { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; font-size:40px; }
+.card-name-label { font-size:13px; letter-spacing:2px; text-align:center; text-transform:uppercase; border-top:1px solid #ffffff22; padding-top:8px; width:100%; color:#e8d060; text-shadow:0 1px 4px #00000099; }
+.tarot-lbl { font-size:14px; letter-spacing:2px; color:#b0b8d8; margin-bottom:8px; text-shadow:0 1px 4px #00000099; }
+.tarot-back-hint { font-size:14px; color:#c0c8e8; font-style:italic; text-shadow:0 1px 4px #00000099; }
 
-/* DOTS */
-.dots-bar {
-  position: fixed;
-  bottom: 20px;
-  left: 0; right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  z-index: 10;
-}
-.dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: #ffffff30;
-  transition: all .3s;
-  cursor: pointer;
-}
-.dot.active {
-  background: #ffffff;
-  width: 22px;
-  border-radius: 4px;
-}
+/* dots */
+.dots-bar { position:fixed; bottom:20px; left:0; right:0; display:flex; align-items:center; justify-content:center; gap:8px; z-index:10; }
+.dot { width:7px; height:7px; border-radius:50%; background:#ffffff28; transition:all .3s; cursor:pointer; }
+.dot.active { background:#c0b0ff; width:22px; border-radius:4px; }
 
-/* ARROWS */
-.arrow-bar {
-  position: fixed;
-  bottom: 44px;
-  right: 18px;
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-.arr {
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  background: #ffffff18;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-}
+/* flechas */
+.arrow-bar { position:fixed; bottom:44px; right:18px; display:flex; gap:10px; z-index:10; }
+.arr { width:36px; height:36px; border-radius:50%; background:#ffffff15; border:none; color:#e0e0ff; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
 
-@keyframes twinkle { 0%,100%{opacity:0} 50%{opacity:.8} }
-@keyframes floatIcon { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-@keyframes glowPisc { 0%,100%{filter:drop-shadow(0 0 8px #9080e077)} 50%{filter:drop-shadow(0 0 22px #9080e0cc)} }
+@keyframes twinkle { 0%,100%{opacity:0} 50%{opacity:.9} }
+@keyframes floatIcon { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes eclipsePulse { 0%,100%{filter:drop-shadow(0 0 12px #9070d088)} 50%{filter:drop-shadow(0 0 36px #c0a0ffcc)} }
+@keyframes ruedaSpin { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
 </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTC55FW9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <div id="stars"></div>
-
 <div class="track" id="track">
 
   <!-- SLIDE 0 · PORTADA -->
   <div class="slide s0">
     <div class="inner">
-      <div class="slide-date accent-aqua" style="letter-spacing:5px;font-size:13px;margin-bottom:10px;text-shadow:0 1px 3px #ffffff33">✦ JUEVES · 27 DE AGOSTO DE 2026 ✦</div>
-      <div style="font-size:72px;margin-bottom:14px;animation:floatIcon 3s ease-in-out infinite;filter:drop-shadow(0 0 16px #9080e088)">🌕</div>
-      <div class="slide-main-title" style="background:linear-gradient(135deg,#6060c0,#c0b0f8,#f0f4ff,#9080e0);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">El Diario de los Astros</div>
-      <div style="font-size:14px;color:#8070c0;letter-spacing:2px;margin-bottom:18px;text-shadow:0 1px 3px #ffffff22">✧ Comienza a sentirse el Eclipse Lunar en Piscis ✧</div>
+      <div style="font-size:11px;letter-spacing:5px;color:#8070b0;margin-bottom:10px;text-shadow:0 1px 4px #00000099">✦ VIERNES · 28 DE AGOSTO DE 2026 ✦</div>
+      <div style="font-size:80px;margin-bottom:14px;animation:eclipsePulse 3s ease-in-out infinite,floatIcon 4s ease-in-out infinite">🌕</div>
+      <div style="font-size:30px;font-style:italic;margin-bottom:8px;line-height:1.2;background:linear-gradient(135deg,#7060c0,#d0b0ff,#f8f0ff,#9080e0);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">El Diario de los Astros</div>
+      <div style="font-size:14px;color:#c0b0e8;letter-spacing:2px;margin-bottom:18px;text-shadow:0 1px 4px #00000099">✧ Eclipse Lunar en Piscis ✧</div>
       <div>
-        <span class="pill" style="background:#2878b020;border:1px solid #2878b040;color:#80c0f0">♒ Luna en Acuario</span>
-        <span class="pill" style="background:#9080e020;border:1px solid #9080e040;color:#c0b0f8">♓ → Piscis tarde</span>
-        <span class="pill" style="background:#5a8a2020;border:1px solid #5a8a2040;color:#a0d060">☿ + ☀️ Virgo</span>
+        <span class="pill" style="background:#9070d020;border:1px solid #9070d040">🌕 Eclipse en Piscis</span>
+        <span class="pill" style="background:#5878a820;border:1px solid #5878a840">☿ ⊠ ⛢ Urano</span>
+        <span class="pill" style="background:#60402020;border:1px solid #604020">♂ △ Luna</span>
       </div>
-      <div class="hint" style="color:#a0b0d0 !important">← deslizá para leer →</div>
+      <div class="hint">← deslizá para leer →</div>
     </div>
   </div>
 
-  <!-- SLIDE 1 · SOL + MERCURIO EN VIRGO -->
+  <!-- SLIDE 1 · QUÉ ES ESTE ECLIPSE -->
   <div class="slide s1">
     <div class="inner">
-      <div class="slide-num accent-olive">2 · 7</div>
-      <div class="slide-icon" style="animation:floatIcon 3s ease-in-out infinite;filter:drop-shadow(0 0 12px #5a8a2088)">☀️☿</div>
-      <div class="slide-tag accent-olive">⟡ EL GRAN ASPECTO DEL DÍA ⟡</div>
-      <div class="slide-title accent-olive">Sol conjunción Mercurio en Virgo</div>
-      <div class="slide-body" style="color:#e8f8d8">
-        Esta conjunción puede traer una <strong style="color:#c0e080">comprensión importante</strong>. Una conversación, una noticia o una información puede ayudarnos a <em>conectar piezas que hasta ahora parecían separadas</em>.
+      <div class="slide-num">2 · 8</div>
+      <div class="slide-icon" style="animation:eclipsePulse 3s ease-in-out infinite,floatIcon 4s ease-in-out infinite">🌑</div>
+      <div class="slide-tag" style="color:#c0b0ff">⟡ EL ACONTECIMIENTO MÁS IMPORTANTE DE LA SEMANA ⟡</div>
+      <div class="slide-title" style="color:#d8c8ff">Eclipse Lunar en Piscis</div>
+      <div class="slide-body">
+        Los eclipses lunares señalan <strong style="color:#e8d8ff">culminaciones, revelaciones y cierres</strong>. Algo llega a su punto máximo. Una situación que veníamos atravesando puede mostrar finalmente su verdadera dimensión.
         <div class="divline"></div>
-        En Virgo, este encuentro busca hechos. Queremos entender qué ocurrió, qué podemos solucionar y qué hacer a continuación. Pero sucede en las <strong style="color:#c0e080">horas previas al eclipse</strong> — por eso, lo que comprendamos hoy puede estar íntimamente relacionado con un proceso que está llegando a su culminación.
+        Piscis nos habla de entrega, sensibilidad, intuición y finales. Frente al Sol en Virgo, el eclipse pone en tensión dos necesidades: <em><strong style="color:#e8d8ff">comprender</strong> y <strong style="color:#e8d8ff">aceptar</strong></em>. Virgo quiere encontrar la explicación. Piscis quiere que soltemos aquello que ya no podemos controlar.
       </div>
     </div>
   </div>
 
-  <!-- SLIDE 2 · LUNA INGRESA A PISCIS -->
+  <!-- SLIDE 2 · LUNA ☍ MERCURIO -->
   <div class="slide s2">
     <div class="inner">
-      <div class="slide-num accent-pisc">3 · 7</div>
-      <div class="slide-icon" style="animation:floatIcon 3.5s ease-in-out infinite;filter:drop-shadow(0 0 14px #9080e088)">🌊</div>
-      <div class="slide-tag accent-pisc">⟡ POR LA TARDE ⟡</div>
-      <div class="slide-title accent-pisc">Luna ingresa a Piscis</div>
-      <div class="slide-body" style="color:#e8e0ff">
-        La energía cambia. <strong style="color:#c0b0f8">Pasamos de observar con distancia a sentir profundamente.</strong>
+      <div class="slide-num">3 · 8</div>
+      <div class="slide-icon" style="animation:floatIcon 3.5s ease-in-out infinite">💬</div>
+      <div class="slide-tag" style="color:#80c0e8">⟡ ALREDEDOR DEL ECLIPSE ⟡</div>
+      <div class="slide-title" style="color:#a0d8f8">Luna oposición Mercurio en Virgo</div>
+      <div class="slide-body" style="color:#d8f0ff">
+        Puede existir una contradicción muy fuerte entre <strong style="color:#f0f8ff">lo que pensamos y lo que sentimos</strong>. La mente puede decir una cosa. El corazón, otra.
         <div class="divline"></div>
-        Podemos estar más sensibles, perceptivos, cansados o conectadas con recuerdos y emociones que parecían olvidados. <em>La mente busca respuestas exactamente cuando las emociones empiezan a desbordar cualquier explicación racional.</em>
-        <div class="divline"></div>
-        Es la antesala del eclipse. <strong style="color:#c0b0f8">Todo lo que se siente esta tarde tiene sentido.</strong>
+        También pueden surgir conversaciones cargadas emocionalmente o información que necesitemos tiempo para procesar. <em>No todo necesita responderse inmediatamente.</em>
       </div>
     </div>
   </div>
 
-  <!-- SLIDE 3 · LUNA SEXTIL QUIRÓN -->
+  <!-- SLIDE 3 · LUNA ⊠ URANO -->
   <div class="slide s3">
     <div class="inner">
-      <div class="slide-num accent-teal">4 · 7</div>
-      <div class="slide-icon" style="animation:floatIcon 4s ease-in-out infinite">🌿</div>
-      <div class="slide-tag accent-teal">⟡ LUNA EN PISCIS ⟡</div>
-      <div class="slide-title accent-teal">Luna sextil Quirón en Tauro</div>
-      <div class="slide-body" style="color:#d8f8f0">
-        Este aspecto puede ayudar a transitar lo que se siente con mayor conciencia.
+      <div class="slide-num">4 · 8</div>
+      <div class="slide-icon" style="animation:floatIcon 3s ease-in-out infinite">⚡</div>
+      <div class="slide-tag" style="color:#60d0b0">⟡ EL FACTOR SORPRESA ⟡</div>
+      <div class="slide-title" style="color:#80e8c8">Luna cuadratura Urano en Géminis</div>
+      <div class="slide-body" style="color:#d0f8f0">
+        Urano introduce el <strong style="color:#f0fff8">factor sorpresa</strong>. Puede haber cambios inesperados, noticias, movimientos o una ruptura de planes. Algo puede ocurrir de una manera completamente diferente de lo previsto.
         <div class="divline"></div>
-        <strong style="color:#80d8c0">Una emoción puede mostrarnos una herida.</strong> Pero también cuánto hemos avanzado desde que esa herida apareció. <em>Quirón en Tauro trabaja sobre el valor propio, la seguridad, la estabilidad.</em>
-        <div class="divline"></div>
-        Hoy ese encuentro con lo que duele llega acompañado de cierta <strong style="color:#80d8c0">conciencia del camino recorrido</strong>. No solo la herida — también la sanación.
+        En un eclipse, este contacto aumenta la sensación de imprevisibilidad. Pero <em><strong style="color:#f0fff8">aquello que cambia también puede estar liberándonos de una estructura que ya era demasiado limitada.</strong></em>
       </div>
     </div>
   </div>
 
-  <!-- SLIDE 4 · LA NOCHE · ECLIPSE -->
+  <!-- SLIDE 4 · MERCURIO + SOL ⊠ URANO -->
   <div class="slide s4">
     <div class="inner">
-      <div class="slide-num accent-eclipse">5 · 7</div>
-      <div class="slide-icon" style="animation:floatIcon 3s ease-in-out infinite;animation:glowPisc 3s ease-in-out infinite,floatIcon 3.5s ease-in-out infinite">🌕</div>
-      <div class="slide-tag accent-eclipse">⟡ ESTA NOCHE ⟡</div>
-      <div class="slide-title accent-eclipse">Entramos en el Eclipse Lunar</div>
-      <div class="slide-body" style="color:#e8e0ff">
-        Hacia la noche ya vamos a sentir con <strong style="color:#d0b0ff">muchísima fuerza</strong> el Eclipse Lunar en Piscis, que se perfecciona durante la madrugada del viernes 28.
+      <div class="slide-num">5 · 8</div>
+      <div class="slide-icon" style="animation:floatIcon 3.5s ease-in-out infinite">🌀</div>
+      <div class="slide-tag" style="color:#d0a0f0">⟡ LA MENTE Y LA DIRECCIÓN ⟡</div>
+      <div class="slide-title" style="color:#e8c0ff">Mercurio y Sol cuadratura Urano</div>
+      <div class="slide-body" style="color:#f0e0ff">
+        La mente puede estar <strong style="color:#fff0ff">acelerada</strong>. Podemos recibir noticias inesperadas, cambiar de opinión rápidamente o descubrir información que altera nuestros planes. Antes de enviar ese mensaje o tomar una decisión definitiva, preguntate si estás reaccionando frente a la sorpresa o actuando desde una verdadera certeza.
         <div class="divline"></div>
-        Alrededor del eclipse, la Luna también se <em>opone a Mercurio</em> y forma una <em>cuadratura con Urano</em>. Puede ser una noche especialmente movilizadora — con noticias inesperadas o conversaciones que sacuden lo que creíamos estable.
+        El Sol cuadrado Urano puede tocar nuestra <strong style="color:#fff0ff">dirección</strong>. La pregunta será: <em>¿estoy intentando conservar algo simplemente porque me da seguridad?</em>
         <div class="divline"></div>
-        <strong style="color:#d0b0ff">No intentemos buscar inmediatamente una explicación para todo.</strong>
+        En su expresión más positiva: <strong style="color:#fff0ff">ideas brillantes y soluciones completamente diferentes.</strong>
       </div>
     </div>
   </div>
 
-  <!-- SLIDE 5 · CONSEJO -->
+  <!-- SLIDE 5 · LUNA △ MARTE -->
   <div class="slide s5">
     <div class="inner">
-      <div class="slide-num accent-gold">6 · 7</div>
-      <div class="slide-icon" style="animation:floatIcon 4s ease-in-out infinite">💭</div>
-      <div class="slide-tag accent-gold">⟡ CONSEJO DEL JUEVES ⟡</div>
-      <div class="slide-title" style="color:#f0d888;text-shadow:0 1px 3px #ffffff33">Observá antes de decidir</div>
-      <div class="consejo-box" style="background:#ffffff06;border:1px solid #f0c06044;border-radius:14px;padding:20px">
-        <div style="font-size:22px;color:#fff8d8;line-height:1.7;font-style:italic;text-shadow:0 1px 4px #00000099">
-          <strong style="color:#fff8c0">Observá qué está llegando a un límite</strong> antes de intentar decidir qué viene después.
-        </div>
-      </div>
-      <div class="divline" style="margin-top:18px"></div>
-      <div style="font-size:17px;color:#f0e8c0;font-style:italic;text-shadow:0 1px 4px #00000099">
-        La claridad de Virgo y la profundidad de Piscis juntas piden paciencia. <em>La culminación llega esta noche. Lo que venga después puede esperar hasta que haya más luz.</em>
+      <div class="slide-num">6 · 8</div>
+      <div class="slide-icon" style="animation:floatIcon 4s ease-in-out infinite">🌊</div>
+      <div class="slide-tag" style="color:#f0a060">⟡ CERCA DEL MEDIODÍA ⟡</div>
+      <div class="slide-title" style="color:#f8c080">Luna trígono Marte en Cáncer</div>
+      <div class="slide-body" style="color:#fff0d8">
+        Aparece una energía que puede ayudar a <strong style="color:#fff8f0">canalizar todo lo vivido</strong>. El trígono de la Luna con Marte permite transformar emoción en acción.
+        <div class="divline"></div>
+        Después de la revelación puede aparecer el coraje para hacer algo diferente. <em>Pero no hace falta correr.</em>
+        <div class="divline"></div>
+        <strong style="color:#fff8f0">Primero procesamos. Después actuamos.</strong>
       </div>
     </div>
   </div>
 
-  <!-- SLIDE 6 · TAROT -->
+  <!-- SLIDE 6 · CONSEJO -->
   <div class="slide s6">
     <div class="inner">
-      <div class="slide-num accent-silver">7 · 7</div>
-      <div class="tarot-num-lbl" style="color:#e0eaff;text-shadow:0 1px 4px #00000099">CARTA NUMEROLÓGICA · 2+7+0+8+2+0+2+6 = <strong style="color:#e0eaff">27 → 9</strong></div>
-      <div id="back-tarot" style="cursor:pointer" onclick="flipTarot()">
-        <div class="card-face" style="background:linear-gradient(160deg,#060810,#10121e,#060810);border:2px solid #8090c0;margin:10px auto 14px">
-          <div class="card-face::before" style="border:1px solid #8090c022"></div>
-          <div class="card-roman" style="color:#b0c0e8">IX</div>
-          <div class="card-art">🕯️<div style="font-size:22px">🌕</div></div>
-          <div class="card-name-label" style="color:#e8f0ff;text-shadow:0 1px 4px #00000099">toca para revelar</div>
+      <div class="slide-num">7 · 8</div>
+      <div class="slide-icon" style="animation:floatIcon 4s ease-in-out infinite">💭</div>
+      <div class="slide-tag" style="color:#e8d060">⟡ CONSEJO DEL VIERNES ⟡</div>
+      <div class="slide-title" style="color:#f8e880">Pausá antes de decidir</div>
+      <div style="background:#ffffff08;border:1px solid #e8d06044;border-radius:14px;padding:20px;margin-top:4px">
+        <div style="font-size:20px;color:#fff8c0;line-height:1.7;font-style:italic;text-shadow:0 1px 4px #00000099">
+          <strong style="color:#ffffe0">No tomes una decisión definitiva</strong> únicamente por el impacto de lo que acabás de descubrir.
         </div>
-        <div style="font-size:13px;color:#d0d8f8;font-style:italic;text-shadow:0 1px 4px #00000099">La carta del día te espera…</div>
       </div>
-      <div id="front-tarot" style="display:none">
-        <div class="card-face" style="background:linear-gradient(160deg,#060810,#0e0818,#060810);border:2px solid #c0a040;margin:10px auto 14px;box-shadow:0 0 24px #c0a04044">
-          <div class="card-roman" style="color:#f0c840">IX</div>
-          <div class="card-art">🕯️<div style="font-size:16px;animation:floatIcon 3s ease-in-out infinite">✦</div></div>
-          <div class="card-name-label" style="color:#f0c840">El Eremita</div>
+      <div style="font-size:17px;color:#e8e0b8;font-style:italic;margin-top:16px;line-height:1.7;text-shadow:0 1px 4px #00000099">
+        El eclipse revela. El tiempo procesa. La decisión puede esperar unos días más.
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7 · TAROT -->
+  <div class="slide s7">
+    <div class="inner">
+      <div class="slide-num">8 · 8</div>
+      <div class="tarot-lbl">CARTA NUMEROLÓGICA · 2+8+0+8+2+0+2+6 = <strong style="color:#d8d0ff">28 → 10</strong></div>
+
+      <div id="back-tarot" style="cursor:pointer" onclick="flipTarot()">
+        <div class="card-face" style="background:linear-gradient(160deg,#04060e,#0c0820,#04060e);border:2px solid #9070d0;box-shadow:0 0 20px #9070d044">
+          <div class="card-roman" style="color:#c0b0f0">X</div>
+          <div class="card-art">🎡<div style="font-size:20px">🌕</div></div>
+          <div class="card-name-label" style="color:#c0b0f0;border-top:1px solid #9070d033">toca para revelar</div>
         </div>
-        <div style="font-size:18px;color:#e8e4ff;line-height:1.8;text-shadow:0 1px 4px #00000099">
-          La carta de <strong style="color:#f0c840">quien camina hacia adentro con su propia luz</strong>. El Eremita aparece en la víspera del Eclipse Lunar — <em style="color:#e0d8ff">como el que sabe que ciertas verdades no se ven en el bullicio, sino cuando uno se para y deja que el eclipse haga su trabajo.</em>
+        <div class="tarot-back-hint">La carta del día te espera…</div>
+      </div>
+
+      <div id="front-tarot" style="display:none">
+        <div class="card-face" style="background:linear-gradient(160deg,#04060e,#0e0c04,#04060e);border:2px solid #e8d060;box-shadow:0 0 24px #e8d06044">
+          <div class="card-roman" style="color:#e8d060">X</div>
+          <div class="card-art" style="font-size:38px">🎡<div style="font-size:16px;animation:floatIcon 3s ease-in-out infinite">✦</div></div>
+          <div class="card-name-label">La Rueda de la Fortuna</div>
+        </div>
+        <div style="font-size:18px;color:#f0ecff;line-height:1.8;text-shadow:0 1px 4px #00000099">
+          La carta de <strong style="color:#e8d060">los ciclos que giran aunque no los veamos</strong>. La Rueda aparece en el Eclipse Lunar — el momento en que algo completa su vuelta.
           <br><br>
-          <strong style="color:#f8d860">Su linterna ilumina exactamente lo que hoy llega a su límite. Observá. Aún no decidas.</strong>
+          Lo que hoy se revela no es el final. Es el punto exacto donde <strong style="color:#e8d060">el ciclo pasado termina y el siguiente comienza.</strong> La Rueda no pregunta si estás lista. Simplemente gira.
         </div>
       </div>
     </div>
@@ -283,10 +222,7 @@ html, body { height: 100%; overflow: hidden; background: #060810 !important; fon
 
 </div><!-- /track -->
 
-<!-- DOTS -->
 <div class="dots-bar" id="dots"></div>
-
-<!-- FLECHAS -->
 <div class="arrow-bar">
   <button class="arr" onclick="goSlide(-1)">‹</button>
   <button class="arr" onclick="goSlide(1)">›</button>
@@ -295,32 +231,31 @@ html, body { height: 100%; overflow: hidden; background: #060810 !important; fon
 <script>
 // Stars
 const sc=document.getElementById('stars');
-for(let i=0;i<80;i++){const s=document.createElement('div');const sz=Math.random()*2.2+0.3;
+for(let i=0;i<100;i++){const s=document.createElement('div');const sz=Math.random()*2.6+0.3;
 const tipo=Math.random();
-const color=tipo>.5?'#9080e0':tipo>.25?'#80c0f0':'#c0a0f0';
-s.style.cssText=`position:fixed;border-radius:50%;background:${color};opacity:0;pointer-events:none;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*5+3).toFixed(2)}s ${(Math.random()*6).toFixed(2)}s ease-in-out infinite;`;
+const col=tipo>.5?'#c0b0ff':tipo>.25?'#9080e0':'#e0d8ff';
+s.style.cssText=`position:fixed;border-radius:50%;background:${col};opacity:0;pointer-events:none;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*4+2).toFixed(2)}s ${(Math.random()*5).toFixed(2)}s ease-in-out infinite;`;
 sc.appendChild(s);}
 
-// Dots + nav
+// Dots
 const track=document.getElementById('track');
-const N=7;
+const N=8;
 const dotsEl=document.getElementById('dots');
 for(let i=0;i<N;i++){const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.onclick=()=>scrollTo(i);dotsEl.appendChild(d);}
-function getDots(){return dotsEl.querySelectorAll('.dot');}
 function scrollTo(i){track.scrollTo({left:i*window.innerWidth,behavior:'smooth'});}
-function goSlide(dir){const cur=Math.round(track.scrollLeft/window.innerWidth);scrollTo(Math.max(0,Math.min(N-1,cur+dir)))}
+function goSlide(dir){const cur=Math.round(track.scrollLeft/window.innerWidth);scrollTo(Math.max(0,Math.min(N-1,cur+dir)));}
 track.addEventListener('scroll',()=>{
   const idx=Math.round(track.scrollLeft/window.innerWidth);
-  getDots().forEach((d,i)=>{d.classList.toggle('active',i===idx);});
+  dotsEl.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
 },{passive:true});
 
-// Navegación con teclado
-document.addEventListener('keydown', e => {
-  if (e.key === 'ArrowRight') goSlide(1);
-  if (e.key === 'ArrowLeft')  goSlide(-1);
+// Teclado
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight') goSlide(1);
+  if(e.key==='ArrowLeft')  goSlide(-1);
 });
 
-// Tarot flip
+// Tarot
 function flipTarot(){document.getElementById('back-tarot').style.display='none';document.getElementById('front-tarot').style.display='block';}
 </script>
 </body>
