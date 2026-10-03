@@ -15,7 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 * { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
 html, body { height:100%; overflow:hidden; background:#100408 !important; font-family:'Palatino Linotype','Book Antiqua',Palatino,serif; color:#fff0f4; }
-#stars { position:fixed; inset:0; pointer-events:none; z-index:0; }
+#stars { position:fixed; inset:0; pointer-events:none; z-index:2; }
 .track { display:flex; width:100%; height:100vh; overflow-x:scroll; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none; position:relative; z-index:1; }
 .track::-webkit-scrollbar { display:none; }
 .slide { min-width:100vw; height:100vh; scroll-snap-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:36px 28px 80px; position:relative; overflow:hidden; }
@@ -78,7 +78,7 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
 }
 .mas-contenido strong { color:#f0d8cc; }
 
-.tarot-img { display:block; width:auto; height:30vh; max-height:240px; min-height:150px; margin:0 auto 16px; border-radius:10px; box-shadow:0 0 22px #c0607030, 0 4px 16px #00000080; }
+.tarot-img { display:block; width:auto; height:30vh; max-height:240px; min-height:150px; margin:0 auto 16px; border-radius:10px; border:1px solid #d8b88090; animation:cardGlow 4s ease-in-out infinite; }
 .slide.s5 { justify-content:flex-start; overflow-y:auto; scrollbar-width:none; }
 .slide.s5::-webkit-scrollbar { display:none; }
 .slide.s5 .inner { margin:auto 0; }
@@ -93,7 +93,8 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
 .arrow-bar { position:fixed; bottom:44px; right:18px; display:flex; gap:10px; z-index:10; }
 .arr { width:34px; height:34px; border-radius:50%; background:#ffffff08; border:none; color:#906070; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
 
-@keyframes twinkle   { 0%,100%{opacity:0} 50%{opacity:.45} }
+@keyframes twinkle   { 0%,100%{opacity:.08} 50%{opacity:.85} }
+@keyframes cardGlow { 0%,100%{box-shadow:0 0 10px #c0a06040, 0 0 22px #c0607030, 0 4px 16px #00000080} 50%{box-shadow:0 0 18px #e0c078aa, 0 0 38px #d0708066, 0 4px 16px #00000080} }
 @keyframes floatUp   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
 @keyframes softPulse { 0%,100%{filter:drop-shadow(0 0 8px #c0104055)} 50%{filter:drop-shadow(0 0 20px #e0306077)} }
 </style>
@@ -197,7 +198,7 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
       <div class="tarot-context">CARTA DEL DÍA · 0+3+1+0+2+0+2+6 = 14</div>
 
       <div id="back-tarot" style="cursor:pointer" onclick="flipTarot()">
-        <div class="card-face" style="background:linear-gradient(160deg,#100408,#1e0610,#100408);border:1px solid #80405060;box-shadow:0 0 20px #5020200a">
+        <div class="card-face" style="background:linear-gradient(160deg,#100408,#1e0610,#100408);border:1px solid #d8b88070;animation:cardGlow 4s ease-in-out infinite">
           <div class="card-roman" style="color:#705060">XIV</div>
           <div class="card-art">🌊</div>
           <div class="card-name-label" style="color:#604050">toca para revelar</div>
@@ -235,9 +236,9 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
 </div>
 <script>
 const sc=document.getElementById('stars');
-for(let i=0;i<55;i++){
+for(let i=0;i<90;i++){
   const s=document.createElement('div');
-  const sz=Math.random()*1.6+0.2;
+  const sz=Math.random()*1.8+0.7;
   s.style.cssText=`position:fixed;border-radius:50%;background:#f0c0d0;opacity:0;pointer-events:none;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*5+4).toFixed(2)}s ${(Math.random()*8).toFixed(2)}s ease-in-out infinite;`;
   sc.appendChild(s);
 }
