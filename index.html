@@ -18,60 +18,80 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
 #stars { position:fixed; inset:0; pointer-events:none; z-index:0; }
 .track { display:flex; width:100%; height:100vh; overflow-x:scroll; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none; position:relative; z-index:1; }
 .track::-webkit-scrollbar { display:none; }
-.slide { min-width:100vw; height:100vh; scroll-snap-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:28px 24px 80px; position:relative; overflow:hidden; }
-.s0 { background:radial-gradient(ellipse at 40% 35%, #220408 0%, #100408 70%); }
-.s1 { background:radial-gradient(ellipse at 55% 40%, #1e0410 0%, #100408 70%); }
-.s2 { background:radial-gradient(ellipse at 38% 52%, #1c0614 0%, #100408 70%); }
-.s3 { background:radial-gradient(ellipse at 50% 45%, #200408 0%, #100408 70%); }
-.s4 { background:radial-gradient(ellipse at 44% 42%, #08101e 0%, #100408 70%); }
-.s5 { background:radial-gradient(ellipse at 46% 44%, #180610 0%, #100408 70%); }
-.inner { max-width:440px; width:100%; text-align:center; }
-.slide-num   { font-size:13px; letter-spacing:4px; margin-bottom:6px; color:#a05060; text-shadow:0 1px 4px #00000099; }
-.slide-icon  { font-size:64px; margin-bottom:14px; line-height:1; }
-.slide-tag   { font-size:13px; letter-spacing:3px; font-weight:bold; margin-bottom:10px; text-shadow:0 1px 4px #00000099; }
-.slide-title { font-size:24px; font-weight:normal; font-style:italic; margin-bottom:16px; line-height:1.3; text-shadow:0 1px 4px #00000099; }
-.slide-body  { font-size:18px; line-height:1.9; color:#fff0f4; text-shadow:0 1px 4px #00000099; }
-.slide-body strong { }
-.slide-body em { font-style:italic; }
-.divline { border:none; border-top:1px solid #ffffff18; margin:13px 0; }
-.hint { font-size:14px; letter-spacing:2px; margin-top:18px; color:#804050; text-shadow:0 1px 4px #00000099; }
+.slide { min-width:100vw; height:100vh; scroll-snap-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:36px 28px 80px; position:relative; overflow:hidden; }
+
+.s0 { background:radial-gradient(ellipse at 45% 40%, #220408 0%, #100408 70%); }
+.s1 { background:radial-gradient(ellipse at 45% 45%, #1a0610 0%, #100408 80%); }
+.s2 { background:radial-gradient(ellipse at 45% 45%, #180410 0%, #100408 80%); }
+.s3 { background:radial-gradient(ellipse at 45% 45%, #1e0408 0%, #100408 80%); }
+.s4 { background:radial-gradient(ellipse at 45% 45%, #081018 0%, #100408 80%); }
+.s5 { background:radial-gradient(ellipse at 45% 45%, #160610 0%, #100408 80%); }
+
+.inner { max-width:400px; width:100%; text-align:center; }
+
+/* PORTADA — igual de siempre */
+.hint { font-size:14px; letter-spacing:2px; margin-top:20px; color:#604050; text-shadow:0 1px 4px #00000099; }
 .pill { display:inline-block; border-radius:20px; padding:5px 14px; font-size:14px; font-weight:bold; letter-spacing:1px; margin:4px; color:#fff0f4; text-shadow:0 1px 4px #00000099; }
 
-/* preguntas venus */
-.preguntas { display:flex; flex-direction:column; gap:9px; margin:10px 0; }
-.pq { border-radius:11px; padding:11px 16px; text-align:left; font-size:16px; font-style:italic; text-shadow:0 1px 4px #00000099; line-height:1.6; border-left:3px solid #d04060; color:#ffd8e4; background:#d0406010; }
-.pq strong { color:#ffffff; font-style:normal; }
+/* SLIDES INTERIORES */
+.slide-context {
+  font-size:13px; letter-spacing:3px; color:#6a4858;
+  text-shadow:0 1px 4px #00000099; margin-bottom:20px; text-transform:uppercase;
+}
+.slide-idea {
+  font-size:22px; line-height:1.6;
+  color:#f0e4ee; text-shadow:0 1px 6px #00000099; margin-bottom:24px;
+}
+.slide-pregunta {
+  font-size:19px; font-style:italic; line-height:1.65;
+  color:#d8c0cc; text-shadow:0 1px 4px #00000099; margin-bottom:20px;
+  border-left:2px solid #a04060; padding-left:18px; text-align:left;
+}
+.slide-integracion {
+  font-size:15px; color:#806070; line-height:1.8;
+  text-shadow:0 1px 4px #00000099; font-style:italic;
+}
+.slide-astro {
+  font-size:12px; letter-spacing:2px; color:#503040;
+  text-shadow:0 1px 4px #00000099; margin-top:18px;
+}
 
-/* marte plutón */
-.dos-m { display:flex; gap:10px; margin:12px 0; }
-.dm { flex:1; border-radius:12px; padding:13px 9px; text-align:center; }
-.dm-ctrl { background:#c0202015; border:1px solid #c0202040; }
-.dm-tran { background:#20808015; border:1px solid #20808040; }
-.dm-icon { font-size:24px; display:block; margin-bottom:5px; }
-.dm-label { font-size:10px; letter-spacing:2px; font-weight:bold; text-shadow:0 1px 4px #00000099; }
-.dm-ctrl .dm-label { color:#f07070; }
-.dm-tran .dm-label { color:#70d090; }
-.dm-txt { font-size:13px; margin-top:4px; line-height:1.5; text-shadow:0 1px 4px #00000099; }
-.dm-ctrl .dm-txt { color:#ffc0b0; }
-.dm-tran .dm-txt { color:#b0f0c0; }
+/* TAROT */
+.tarot-context { font-size:11px; letter-spacing:4px; color:#705060; text-shadow:0 1px 4px #00000099; margin-bottom:16px; }
+.tarot-nombre  { font-size:18px; letter-spacing:3px; color:#c0a060; text-shadow:0 1px 4px #00000099; margin-bottom:20px; }
+.tarot-poema   { font-size:18px; line-height:2.1; color:#e0d0dc; text-shadow:0 1px 4px #00000099; margin-bottom:20px; text-align:left; }
+.tarot-pregunta{ font-size:18px; font-style:italic; color:#b0909c; text-shadow:0 1px 4px #00000099; line-height:1.6; margin-bottom:24px; }
 
-.card-face { width:150px; height:235px; margin:0 auto 16px; border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:14px 12px; }
+/* botón más sobre tarot */
+.btn-mas {
+  display:inline-block; padding:10px 22px; border-radius:22px;
+  border:1px solid #a0607088; color:#c09080;
+  font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;
+  font-size:14px; letter-spacing:2px; background:transparent;
+  cursor:pointer; text-shadow:0 1px 4px #00000099;
+  transition:border-color .3s, color .3s;
+}
+.btn-mas:active { border-color:#d09090; color:#e0b0a0; }
+.mas-contenido {
+  display:none; margin-top:18px; font-size:16px; line-height:1.85;
+  color:#d0b8c0; text-shadow:0 1px 4px #00000099; text-align:left;
+}
+.mas-contenido strong { color:#f0d8cc; }
+
+.card-face { width:130px; height:210px; margin:0 auto 16px; border-radius:14px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:14px 10px; }
 .card-roman { font-size:13px; letter-spacing:3px; font-weight:bold; text-shadow:0 1px 4px #00000099; }
-.card-art { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; font-size:40px; }
-.card-name-label { font-size:13px; letter-spacing:2px; text-align:center; text-transform:uppercase; border-top:1px solid #ffffff22; padding-top:8px; width:100%; text-shadow:0 1px 4px #00000099; }
-.tarot-lbl { font-size:14px; letter-spacing:2px; color:#a06070; margin-bottom:8px; text-shadow:0 1px 4px #00000099; }
-.tarot-back-hint { font-size:14px; color:#c08090; font-style:italic; text-shadow:0 1px 4px #00000099; }
+.card-art { flex:1; display:flex; align-items:center; justify-content:center; font-size:36px; }
+.card-name-label { font-size:12px; letter-spacing:2px; text-align:center; text-transform:uppercase; border-top:1px solid #ffffff15; padding-top:8px; width:100%; text-shadow:0 1px 4px #00000099; }
+
 .dots-bar { position:fixed; bottom:20px; left:0; right:0; display:flex; align-items:center; justify-content:center; gap:8px; z-index:10; }
-.dot { width:7px; height:7px; border-radius:50%; background:#ffffff22; transition:all .3s; cursor:pointer; }
-.dot.active { background:#d04060; width:22px; border-radius:4px; }
+.dot { width:6px; height:6px; border-radius:50%; background:#ffffff15; transition:all .4s; cursor:pointer; }
+.dot.active { background:#a05060; width:20px; border-radius:3px; }
 .arrow-bar { position:fixed; bottom:44px; right:18px; display:flex; gap:10px; z-index:10; }
-.arr { width:36px; height:36px; border-radius:50%; background:#ffffff12; border:none; color:#f0c0d0; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
-@keyframes twinkle   { 0%,100%{opacity:0} 50%{opacity:.9} }
-@keyframes floatUp   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-9px)} }
-@keyframes venRxPulse{ 0%,100%{filter:drop-shadow(0 0 14px #c0104088)} 50%{filter:drop-shadow(0 0 36px #f04080ff)} }
-@keyframes martePulse{ 0%,100%{filter:drop-shadow(0 0 10px #c0202088)} 50%{filter:drop-shadow(0 0 28px #f04040cc)} }
-@keyframes canPulse  { 0%,100%{filter:drop-shadow(0 0 8px #3080a088)} 50%{filter:drop-shadow(0 0 22px #50a0c0cc)} }
-@keyframes tempPulse { 0%,100%{filter:drop-shadow(0 0 10px #6090a088)} 50%{filter:drop-shadow(0 0 26px #80c0d0cc)} }
+.arr { width:34px; height:34px; border-radius:50%; background:#ffffff08; border:none; color:#906070; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+
+@keyframes twinkle   { 0%,100%{opacity:0} 50%{opacity:.45} }
+@keyframes floatUp   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+@keyframes softPulse { 0%,100%{filter:drop-shadow(0 0 8px #c0104055)} 50%{filter:drop-shadow(0 0 20px #e0306077)} }
 </style>
 </head>
 <body>
@@ -83,9 +103,9 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
   <div class="slide s0">
     <div class="inner">
       <div style="font-size:11px;letter-spacing:5px;color:#a05060;margin-bottom:12px;text-shadow:0 1px 4px #00000099">✦ SÁBADO · 3 DE OCTUBRE DE 2026 ✦</div>
-      <div style="font-size:76px;margin-bottom:14px;animation:venRxPulse 3s ease-in-out infinite,floatUp 4s ease-in-out infinite">♀</div>
-      <div style="font-size:30px;font-style:italic;margin-bottom:8px;line-height:1.2;background:linear-gradient(135deg,#900820,#e03060,#fff0f4,#308090);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">El Diario de los Astros</div>
-      <div style="font-size:14px;color:#c05060;letter-spacing:2px;margin-bottom:18px;text-shadow:0 1px 4px #00000099">✧ Venus comienza a retrogradar en Escorpio ✧</div>
+      <div style="font-size:76px;margin-bottom:16px;animation:softPulse 4s ease-in-out infinite,floatUp 5s ease-in-out infinite">♀</div>
+      <div style="font-size:30px;font-style:italic;margin-bottom:10px;line-height:1.2;background:linear-gradient(135deg,#900820,#e03060,#fff0f4,#308090);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">El Diario de los Astros</div>
+      <div style="font-size:14px;color:#b05868;letter-spacing:2px;margin-bottom:18px;text-shadow:0 1px 4px #00000099">✧ Venus comienza a retrogradar en Escorpio ✧</div>
       <div>
         <span class="pill" style="background:#c0104020;border:1px solid #c0104050">♀ Rx ♏</span>
         <span class="pill" style="background:#c0202020;border:1px solid #c0202050">♂ ☍ ♇</span>
@@ -95,17 +115,21 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
     </div>
   </div>
 
-  <!-- SLIDE 1 · VENUS RX -->
+  <!-- SLIDE 1 · VENUS RX CLIMA -->
   <div class="slide s1">
     <div class="inner">
-      <div class="slide-num">2 · 6</div>
-      <div class="slide-icon" style="animation:venRxPulse 2.5s ease-in-out infinite,floatUp 3.5s ease-in-out infinite">🌹</div>
-      <div class="slide-tag" style="color:#f05080">⟡ VENUS ESTACIONA RETRÓGRADA EN ESCORPIO ⟡</div>
-      <div class="slide-title" style="color:#f87090">Comienza una revisión profunda</div>
-      <div class="slide-body" style="color:#fff4f8">
-        Relaciones, deseo, dinero, autoestima, valoración y capacidad para recibir. <strong style="color:#ffffff">Escorpio lleva a Venus hacia los lugares donde amor y miedo pueden mezclarse.</strong>
-        <div class="divline"></div>
-        <em>Durante las próximas semanas estas preguntas irán desarrollándose — no todas de golpe.</em>
+      <div class="slide-context">Venus · Escorpio · retrógrada</div>
+      <div class="slide-idea">
+        ¿Qué estás intentando sostener<br>
+        por miedo a perderlo?
+      </div>
+      <div class="slide-pregunta">
+        Hoy no se trata de decidir.<br>
+        Se trata de mirar qué hay detrás del deseo.
+      </div>
+      <div class="slide-integracion">
+        Venus retrograda en Escorpio.<br>
+        Esto dura semanas. No hay apuro.
       </div>
     </div>
   </div>
@@ -113,55 +137,52 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
   <!-- SLIDE 2 · LAS PREGUNTAS -->
   <div class="slide s2">
     <div class="inner">
-      <div class="slide-num">3 · 6</div>
-      <div class="slide-icon" style="animation:floatUp 5s ease-in-out infinite">🔮</div>
-      <div class="slide-tag" style="color:#e04070">⟡ LAS PREGUNTAS DE VENUS RX ⟡</div>
-      <div class="slide-title" style="color:#f86080">¿Quiero — o temo perder?</div>
-      <div class="preguntas">
-        <div class="pq">¿Quiero esta relación — o <strong>temo perderla</strong>?</div>
-        <div class="pq">¿Estoy <strong>compartiendo</strong> — o dependiendo?</div>
-        <div class="pq">¿Deseo a esta persona — o deseo <strong>sentirme elegida</strong>?</div>
-        <div class="pq">¿Acepto este acuerdo porque <strong>me conviene</strong> — o porque temo quedarme sin nada?</div>
+      <div class="slide-context">Lo que Venus viene a revisar</div>
+      <div class="slide-idea">
+        ¿Quiero esta relación<br>o temo quedarme sin ella?<br><br>
+        ¿Deseo a esta persona<br>o deseo sentirme elegida?
       </div>
+      <div class="slide-integracion">
+        Relaciones · deseo · dinero · valor personal · reciprocidad.
+      </div>
+      <div class="slide-astro">Venus Rx · Escorpio · proceso largo</div>
     </div>
   </div>
 
   <!-- SLIDE 3 · MARTE PLUTÓN -->
   <div class="slide s3">
     <div class="inner">
-      <div class="slide-num">4 · 6</div>
-      <div class="slide-icon" style="animation:martePulse 2.5s ease-in-out infinite,floatUp 3.5s ease-in-out infinite">⚡</div>
-      <div class="slide-tag" style="color:#f06050">⟡ MARTE EN LEO OPOSICIÓN PLUTÓN ⟡</div>
-      <div class="slide-title" style="color:#f88070">Fuerza que puede ir en dos direcciones</div>
-      <div class="dos-m">
-        <div class="dm dm-ctrl">
-          <span class="dm-icon">😤</span>
-          <div class="dm-label">CONTROLAR TODO</div>
-          <div class="dm-txt">luchas de poder · confrontación · agotamiento</div>
-        </div>
-        <div class="dm dm-tran">
-          <span class="dm-icon">🔥</span>
-          <div class="dm-label">TRANSFORMAR ALGO</div>
-          <div class="dm-txt">acción frente a lo que parecía imposible · resultados reales</div>
-        </div>
+      <div class="slide-context">Marte · Leo · Plutón</div>
+      <div class="slide-idea">
+        Hoy hay una fuerza enorme disponible.
       </div>
-      <div style="font-size:17px;color:#fff4e8;line-height:1.7;text-shadow:0 1px 4px #00000099;margin-top:8px">
-        <strong style="color:#ffffff">La diferencia está en la conciencia con que se usa esa fuerza.</strong>
+      <div class="slide-pregunta">
+        ¿La estás usando para luchar contra alguien —<br>
+        o para transformar algo que realmente necesita cambiar?
       </div>
+      <div class="slide-integracion">
+        La diferencia no está en la intensidad.<br>
+        Está en la dirección.
+      </div>
+      <div class="slide-astro">Marte oposición Plutón</div>
     </div>
   </div>
 
   <!-- SLIDE 4 · CUARTO MENGUANTE -->
   <div class="slide s4">
     <div class="inner">
-      <div class="slide-num">5 · 6</div>
-      <div class="slide-icon" style="animation:canPulse 3.5s ease-in-out infinite,floatUp 4.5s ease-in-out infinite">🌗</div>
-      <div class="slide-tag" style="color:#70b0d0">⟡ CUARTO MENGUANTE · LUNA ⊠ SOL ⟡</div>
-      <div class="slide-title" style="color:#90d0f0">Lo que se entendió debe traducirse</div>
-      <div class="slide-body" style="color:#e0f4ff">
-        Después de la Luna Llena en Aries, comienza una <strong style="color:#ffffff">fase de ajuste</strong>. Lo que se comprendió en esa plenitud necesita ahora traducirse en una <em>decisión emocional concreta</em>.
-        <div class="divline"></div>
-        <strong style="color:#c0e8ff">No todo puede continuar de la misma manera. La Luna en Cáncer pregunta qué necesita cambiarse — no en abstracto, sino en la vida cotidiana real.</strong>
+      <div class="slide-context">Cuarto Menguante · Cáncer</div>
+      <div class="slide-idea">
+        Algo que comprendiste<br>
+        necesita volverse una decisión.
+      </div>
+      <div class="slide-pregunta">
+        No para el mundo.<br>
+        Para vos.
+      </div>
+      <div class="slide-integracion">
+        La Luna menguante pide honestidad emocional,<br>
+        no perfección ni urgencia.
       </div>
     </div>
   </div>
@@ -169,28 +190,35 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
   <!-- SLIDE 5 · TAROT -->
   <div class="slide s5">
     <div class="inner">
-      <div class="slide-num">6 · 6</div>
-      <div class="tarot-lbl">CARTA NUMEROLÓGICA · 0+3+1+0+2+0+2+6 = <strong style="color:#d0b0c0">14</strong></div>
+      <div class="tarot-context">CARTA DEL DÍA · 0+3+1+0+2+0+2+6 = 14</div>
+
       <div id="back-tarot" style="cursor:pointer" onclick="flipTarot()">
-        <div class="card-face" style="background:linear-gradient(160deg,#100408,#220408,#100408);border:2px solid #906070;box-shadow:0 0 18px #90607033">
-          <div class="card-roman" style="color:#c090a0">XIV</div>
-          <div class="card-art">🌊<div style="font-size:20px">♀</div></div>
-          <div class="card-name-label" style="color:#c090a0;border-top:1px solid #90607033">toca para revelar</div>
+        <div class="card-face" style="background:linear-gradient(160deg,#100408,#1e0610,#100408);border:1px solid #80405060;box-shadow:0 0 20px #5020200a">
+          <div class="card-roman" style="color:#705060">XIV</div>
+          <div class="card-art">🌊</div>
+          <div class="card-name-label" style="color:#604050">toca para revelar</div>
         </div>
-        <div class="tarot-back-hint">La carta del día te espera…</div>
+        <div style="font-size:14px;color:#605060;font-style:italic;text-shadow:0 1px 4px #00000099;margin-top:8px">La carta del día te espera…</div>
       </div>
+
       <div id="front-tarot" style="display:none">
-        <div class="card-face" style="background:linear-gradient(160deg,#100408,#220408,#100408);border:2px solid #e8d040;box-shadow:0 0 24px #e8d04044">
-          <div class="card-roman" style="color:#e8d060">XIV</div>
-          <div class="card-art">🌊<div style="font-size:16px;animation:floatUp 3s ease-in-out infinite">✦</div></div>
-          <div class="card-name-label" style="color:#e8d060">La Templanza</div>
+        <div class="tarot-nombre">LA TEMPLANZA</div>
+        <div class="tarot-poema" style="font-size:17px">
+          No tenés que resolverlo todo hoy.<br><br>
+          Venus revisa.<br>
+          Marte confronta.<br>
+          Plutón transforma.<br><br>
+          Vos integrás.
         </div>
-        <div style="font-size:18px;color:#fff0f4;line-height:1.8;text-shadow:0 1px 4px #00000099">
-          La carta de <strong style="color:#e8d060">quien integra sin apresurarse</strong>. La Templanza aparece el día en que Venus retrograda y Marte choca con Plutón — cuando toda la intensidad puede hacer que se quiera resolver todo de una vez.
-          <br><br>
-          <strong style="color:#e8d060">La Templanza de hoy pide paciencia con el proceso. Lo que Venus viene a revisar no se resuelve en un día — se comprende en capas.</strong>
+        <div class="tarot-pregunta">
+          ¿Qué necesita tiempo<br>en lugar de una respuesta?
+        </div>
+        <button class="btn-mas" onclick="toggleMas()">✦ más sobre tarot</button>
+        <div class="mas-contenido" id="mas-contenido">
+          La Templanza aparece cuando la intensidad exige que todo ocurra a la vez. Su propuesta es opuesta: <strong>integrar en lugar de resolver</strong>. No es pasividad — es la sabiduría de saber que mezclar demasiado rápido arruina lo que se está cocinando. Venus retrógrada necesita tiempo para mostrar qué es real. Marte y Plutón necesitan dirección, no prisa. <strong>La Templanza confía en el proceso cuando todo lo demás pide una respuesta inmediata.</strong>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -202,10 +230,12 @@ html, body { height:100%; overflow:hidden; background:#100408 !important; font-f
 </div>
 <script>
 const sc=document.getElementById('stars');
-for(let i=0;i<90;i++){const s=document.createElement('div');const sz=Math.random()*2.4+0.3;
-const col=Math.random()>.5?'#e03060':Math.random()>.5?'#f06080':'#c01040';
-s.style.cssText=`position:fixed;border-radius:50%;background:${col};opacity:0;pointer-events:none;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*3+2).toFixed(2)}s ${(Math.random()*5).toFixed(2)}s ease-in-out infinite;`;
-sc.appendChild(s);}
+for(let i=0;i<55;i++){
+  const s=document.createElement('div');
+  const sz=Math.random()*1.6+0.2;
+  s.style.cssText=`position:fixed;border-radius:50%;background:#f0c0d0;opacity:0;pointer-events:none;left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation:twinkle ${(Math.random()*5+4).toFixed(2)}s ${(Math.random()*8).toFixed(2)}s ease-in-out infinite;`;
+  sc.appendChild(s);
+}
 const track=document.getElementById('track');
 const N=6;
 const dotsEl=document.getElementById('dots');
@@ -220,7 +250,21 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight') goSlide(1);
   if(e.key==='ArrowLeft')  goSlide(-1);
 });
-function flipTarot(){document.getElementById('back-tarot').style.display='none';document.getElementById('front-tarot').style.display='block';}
+function flipTarot(){
+  document.getElementById('back-tarot').style.display='none';
+  document.getElementById('front-tarot').style.display='block';
+}
+function toggleMas(){
+  const el=document.getElementById('mas-contenido');
+  const btn=document.querySelector('.btn-mas');
+  if(el.style.display==='block'){
+    el.style.display='none';
+    btn.textContent='✦ más sobre tarot';
+  } else {
+    el.style.display='block';
+    btn.textContent='✦ cerrar';
+  }
+}
 </script>
 </body>
 </html>
