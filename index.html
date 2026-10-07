@@ -35,12 +35,12 @@ html, body { height:100%; overflow:hidden; background:#0a0c12 !important; font-f
 
 /* PORTADA — igual que antes */
 .slide-num   { font-size:13px; letter-spacing:4px; margin-bottom:6px; color:#808868; text-shadow:0 1px 4px #00000099; }
-.hint { font-size:14px; letter-spacing:2px; margin-top:20px; color:#505848; text-shadow:0 1px 4px #00000099; }
-.pill { display:inline-block; border-radius:20px; padding:5px 14px; font-size:14px; font-weight:bold; letter-spacing:1px; margin:4px; color:#f8f4e4; text-shadow:0 1px 4px #00000099; }
+.hint { font-size:17px; letter-spacing:1.5px; margin-top:22px; color:#f0e4b8; text-shadow:0 1px 4px #00000099; }
+.pill { display:inline-block; border-radius:22px; padding:7px 16px; font-size:17px; font-weight:bold; letter-spacing:1px; margin:4px; color:#f8f4e4; text-shadow:0 1px 4px #00000099; }
 
 /* SLIDES INTERIORES — nuevo formato */
 .slide-context {
-  font-size:13px; letter-spacing:3px; color:#707868;
+  font-size:13px; letter-spacing:3px; color:#d0c890;
   text-shadow:0 1px 4px #00000099; margin-bottom:20px; text-transform:uppercase;
 }
 .slide-idea {
@@ -53,17 +53,17 @@ html, body { height:100%; overflow:hidden; background:#0a0c12 !important; font-f
   border-left:2px solid #c09838; padding-left:18px; text-align:left;
 }
 .slide-integracion {
-  font-size:16px; color:#8c9478; line-height:1.8;
+  font-size:19px; color:#c4ccac; line-height:1.7;
   text-shadow:0 1px 4px #00000099; font-style:italic;
 }
 .slide-astro {
-  font-size:13px; letter-spacing:2px; color:#5c6450;
+  font-size:16px; letter-spacing:1.5px; color:#b8c0a0;
   text-shadow:0 1px 4px #00000099; margin-top:18px;
 }
 
 /* TAROT — nuevo formato */
 .tarot-context {
-  font-size:11px; letter-spacing:4px; color:#606858;
+  font-size:12px; letter-spacing:3px; color:#d0c890;
   text-shadow:0 1px 4px #00000099; margin-bottom:16px;
 }
 .tarot-nombre {
@@ -83,13 +83,13 @@ html, body { height:100%; overflow:hidden; background:#0a0c12 !important; font-f
   display:inline-block; padding:10px 22px; border-radius:22px;
   border:1px solid #90884888; color:#c0b880;
   font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;
-  font-size:14px; letter-spacing:2px; background:transparent;
+  font-size:16px; letter-spacing:1.5px; background:transparent;
   cursor:pointer; text-shadow:0 1px 4px #00000099;
   transition:border-color .3s, color .3s;
 }
 .btn-mas:active { border-color:#c8b868; color:#e4dcb0; }
 .mas-contenido {
-  display:none; margin-top:18px; font-size:16px; line-height:1.85;
+  display:none; margin-top:18px; font-size:18px; line-height:1.75;
   color:#d0ccb8; text-shadow:0 1px 4px #00000099; text-align:left;
 }
 .mas-contenido strong { color:#f4f0dc; }
@@ -109,6 +109,8 @@ html, body { height:100%; overflow:hidden; background:#0a0c12 !important; font-f
 .arr { width:34px; height:34px; border-radius:50%; background:#ffffff0a; border:none; color:#a09868; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
 
 @keyframes twinkle { 0%,100%{opacity:.08} 50%{opacity:.85} }
+@keyframes lineGlow { 0%,100%{box-shadow:0 0 6px #f0d07040, inset 0 0 6px #f0d07018} 50%{box-shadow:0 0 14px #f0d070aa, 0 0 26px #50b0c055, inset 0 0 8px #f0d07030} }
+.glow-line { display:inline-block; padding:7px 16px; border-radius:20px; border:1px solid #e8d08088; background:#00000030; animation:lineGlow 4s ease-in-out infinite; }
 @keyframes cardGlow { 0%,100%{box-shadow:0 0 10px #c0a86040, 0 0 22px #40a0b030, 0 4px 16px #00000080} 50%{box-shadow:0 0 18px #f0d070aa, 0 0 38px #50b0c066, 0 4px 16px #00000080} }
 @keyframes floatUp { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
 @keyframes softPulse{ 0%,100%{filter:drop-shadow(0 0 8px #c0983066)} 50%{filter:drop-shadow(0 0 18px #f0c84088)} }
@@ -122,16 +124,16 @@ html, body { height:100%; overflow:hidden; background:#0a0c12 !important; font-f
   <!-- SLIDE 0 · PORTADA -->
   <div class="slide s0">
     <div class="inner">
-      <div style="font-size:11px;letter-spacing:5px;color:#a08050;margin-bottom:12px;text-shadow:0 1px 4px #00000099">✦ MIÉRCOLES · 7 DE OCTUBRE DE 2026 ✦</div>
+      <div style="font-size:15px;letter-spacing:4px;padding-left:4px;text-align:center;color:#f4e0a8;margin-bottom:14px;text-shadow:0 1px 4px #00000099">07/10/2026</div>
       <div style="font-size:78px;margin-bottom:16px;animation:softPulse 4s ease-in-out infinite,floatUp 5s ease-in-out infinite">⚡</div>
       <div style="font-size:30px;font-style:italic;margin-bottom:10px;line-height:1.2;background:linear-gradient(135deg,#805020,#e0a840,#f4f4ec,#40a0b0);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">El Diario de los Astros</div>
-      <div style="font-size:14px;color:#909078;letter-spacing:2px;margin-bottom:18px;text-shadow:0 1px 4px #00000099">✧ Marte sextil Urano · actuar de otra manera ✧</div>
+      <div style="font-size:14px;color:#d8d4b0;letter-spacing:2px;margin-bottom:18px;text-shadow:0 1px 4px #00000099">✧ Marte sextil Urano · actuar de otra manera ✧</div>
       <div>
         <span class="pill" style="background:#d0901020;border:1px solid #d0901045">♂ ✶ ♅</span>
         <span class="pill" style="background:#30a0b020;border:1px solid #30a0b045">♌ Leo · ♊ Géminis</span>
         <span class="pill" style="background:#70906020;border:1px solid #70906045">☽ ♍ Luna en Virgo</span>
       </div>
-      <div class="hint">← deslizá para leer →</div>
+      <div class="hint glow-line">← deslizá para leer →</div>
     </div>
   </div>
 
@@ -214,11 +216,11 @@ html, body { height:100%; overflow:hidden; background:#0a0c12 !important; font-f
 
       <div id="back-tarot" style="cursor:pointer" onclick="flipTarot()">
         <div class="card-face" style="background:linear-gradient(160deg,#0a0e12,#101a20,#0a0e12);border:1px solid #d8c08070;animation:cardGlow 4s ease-in-out infinite">
-          <div class="card-roman" style="color:#707868">XVIII</div>
+          <div class="card-roman" style="color:#e0d090">XVIII</div>
           <div class="card-art">🌙</div>
-          <div class="card-name-label" style="color:#586058">toca para revelar</div>
+          <div class="card-name-label" style="color:#d0d0a8">toca para revelar</div>
         </div>
-        <div style="font-size:14px;color:#606858;font-style:italic;text-shadow:0 1px 4px #00000099;margin-top:8px">La carta del día te espera…</div>
+        <div style="font-size:17px;color:#c4c8a8;font-style:italic;text-shadow:0 1px 4px #00000099;margin-top:8px">La carta del día te espera…</div>
       </div>
 
       <div id="front-tarot" style="display:none">
